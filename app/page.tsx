@@ -1,36 +1,27 @@
-import HeroPremium from "@/components/hero/HeroPremium";
+﻿import HeroPremium from "@/components/hero/HeroPremium";
 import NewsSection from "@/components/NewsSection";
 import TodayCenter from "@/components/TodayCenter";
 import ProgramsSection from "@/components/ProgramsSection";
 import AdBanner from "@/components/AdBanner";
 import Partners from "@/components/Partners";
 import Footer from "@/components/Footer";
+import TrumunuLiveTickerGate from "@/components/girabola/TrumunuLiveTickerGate";
 
 export default function Home() {
   return (
     <main className="w-full">
-
-      {/* Destaque */}
       <HeroPremium />
 
-      {/* Mais Notícias */}
+      <div className="mx-auto w-full max-w-7xl px-4 py-6 md:px-6">
+        <TrumunuLiveTickerGate />
+      </div>
+
       <NewsSection />
-
-      {/* Centro do Dia */}
-      <TodayCenter />
-
-      {/* Programas em Destaque */}
       <ProgramsSection />
-
-      {/* Publicidade */}
+      <TodayCenter />
       <AdBanner />
-
-      {/* Parceiros */}
       <Partners />
-
-      {/* Rodapé */}
       <Footer />
-
     </main>
   );
 }

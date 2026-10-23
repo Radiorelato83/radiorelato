@@ -6,28 +6,28 @@ const partners = [
     name: "ProDesportista",
     description: "Comunicação, imagem e gestão no desporto.",
     image: "/partners/prodesportista.png",
-    imageClass: "h-[100px] w-[220px]",
+    imageClass: "h-[125px] w-[285px]",
   },
   {
     id: 2,
     name: "Josaida Comércio & Serviços",
     description: "Comércio e serviços.",
     image: "/partners/josaida.png",
-    imageClass: "h-[105px] w-[230px]",
+    imageClass: "h-[130px] w-[295px]",
   },
   {
     id: 3,
     name: "Banga M'bote",
     description: "Parceiro da Rádio Relato.",
     image: "/partners/banga-mbote.png",
-    imageClass: "h-[105px] w-[230px]",
+    imageClass: "h-[130px] w-[295px]",
   },
   {
     id: 4,
     name: "PRIME STUDIO",
     description: "Design e comunicação visual.",
     image: "/partners/prime-studio.png",
-    imageClass: "h-[105px] w-[230px]",
+    imageClass: "h-[130px] w-[295px]",
   },
 ];
 
@@ -36,8 +36,10 @@ export default function Partners() {
     <section className="bg-white py-12 md:py-16">
       <div className="mx-auto w-full max-w-[1600px] px-4 md:px-6 lg:px-8">
 
-        {/* Cabeçalho */}
+        {/* CABEÇALHO */}
+
         <div className="mb-8 text-center">
+
           <p className="text-sm font-black uppercase tracking-[0.18em] text-red-600">
             Rede Rádio Relato
           </p>
@@ -50,46 +52,79 @@ export default function Partners() {
             Marcas e entidades que fazem parte da nossa rede e contribuem
             para o crescimento da Rádio Relato.
           </p>
+
         </div>
 
-        {/* Cards */}
+        {/* PARCEIROS */}
+
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {partners.map((partner) => (
+
+          {partners.map((partner, index) => (
+
             <div
               key={partner.id}
-              className="group flex min-h-[210px] flex-col items-center justify-between rounded-2xl border border-gray-200 bg-[#f8fafc] px-6 py-6 text-center shadow-sm transition duration-300 hover:-translate-y-1 hover:border-blue-200 hover:bg-white hover:shadow-lg"
+              className="group overflow-hidden rounded-2xl border border-gray-200 bg-slate-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-blue-300 hover:shadow-lg"
             >
 
-              {/* Logo */}
-              <div className="flex h-[125px] w-full items-center justify-center">
+              {/* ÁREA DO LOGO */}
+
+              <div className="relative flex h-[155px] items-center justify-center overflow-hidden px-3">
+
+                {/* detalhe de identidade */}
+
                 <div
-                  className={`relative ${partner.imageClass} transition duration-300 group-hover:scale-105`}
+                  className={`absolute left-0 top-0 h-1 w-full ${
+                    index % 2 === 0
+                      ? "bg-blue-900"
+                      : "bg-red-600"
+                  }`}
+                />
+
+                <div
+                  className={`relative ${partner.imageClass} transition-transform duration-300 group-hover:scale-[1.04]`}
                 >
+
                   <Image
                     src={partner.image}
                     alt={partner.name}
                     fill
-                    sizes="230px"
+                    sizes="295px"
                     className="object-contain"
                   />
+
                 </div>
+
               </div>
 
-              {/* Descrição */}
-              <p className="mt-3 text-xs leading-5 text-gray-400">
-                {partner.description}
-              </p>
+              {/* INFORMAÇÃO */}
+
+              <div className="border-t border-gray-200 bg-white px-4 py-3 text-center">
+
+                <h3 className="text-sm font-black text-blue-950">
+                  {partner.name}
+                </h3>
+
+                <p className="mt-1 text-xs leading-5 text-gray-500">
+                  {partner.description}
+                </p>
+
+              </div>
 
             </div>
+
           ))}
+
         </div>
 
-        {/* Texto final */}
+        {/* TEXTO FINAL */}
+
         <div className="mt-8 text-center">
+
           <p className="text-xs font-medium text-gray-400">
             A Rádio Relato valoriza parcerias que aproximam o desporto,
             a comunicação e o mundo empresarial.
           </p>
+
         </div>
 
       </div>

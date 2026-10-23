@@ -1,13 +1,12 @@
-﻿import Image from "next/image";
+﻿
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Header() {
   return (
     <header className="w-full bg-blue-950 text-white shadow-md">
-
       {/* IDENTIDADE DA RÁDIO */}
       <div className="flex flex-col items-center justify-center px-4 py-4 md:py-5">
-
         <Link
           href="/"
           className="group flex flex-col items-center"
@@ -23,20 +22,17 @@ export default function Header() {
           />
 
           <span className="mt-1 text-center text-[11px] font-semibold italic tracking-[0.18em] text-blue-200 md:text-xs">
-            Desporto com paixão e alma!
+            Paixão pelo desporto!
           </span>
         </Link>
-
       </div>
 
       {/* MENU PRINCIPAL */}
       <div className="border-t border-white/10 bg-blue-950/95">
-
         <nav
           className="mx-auto max-w-[1600px] px-4 lg:px-8"
           aria-label="Navegação principal"
         >
-
           <div
             className="
               flex
@@ -52,7 +48,6 @@ export default function Header() {
               md:text-base
             "
           >
-
             <Link
               href="/"
               className="shrink-0 transition-colors duration-200 hover:text-blue-300"
@@ -69,6 +64,7 @@ export default function Header() {
 
             <Link
               href="/programas"
+              id="menu-programas"
               className="shrink-0 transition-colors duration-200 hover:text-blue-300"
             >
               Programas
@@ -103,18 +99,23 @@ export default function Header() {
             </Link>
 
             <Link
+              href="/quem-somos"
+              id="menu-quem-somos"
+              className="shrink-0 transition-colors duration-200 hover:text-blue-300"
+            >
+              Quem Somos
+            </Link>
+
+            <Link
               href="/contactos"
+              id="menu-contactos"
               className="shrink-0 transition-colors duration-200 hover:text-blue-300"
             >
               Contactos
             </Link>
-
           </div>
-
         </nav>
-
       </div>
-
     </header>
   );
 }

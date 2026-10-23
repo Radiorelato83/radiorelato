@@ -1,6 +1,11 @@
 ﻿"use client";
 
-import { useEffect, useState } from "react";
+import {
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 import { programs, defaultProgram } from "@/data/programs";
 import { useRadio } from "@/components/providers/RadioProvider";
 
@@ -13,13 +18,52 @@ type CurrentProgram = {
   end?: string;
 };
 
+type SlidePosition = {
+  left: number;
+  width: number;
+};
+
 function getCurrentProgram(): CurrentProgram {
   const now = new Date();
 
-  const currentDay = now.getDay();
+  const luandaParts = new Intl.DateTimeFormat("en-US", {
+    timeZone: "Africa/Luanda",
+    weekday: "short",
+    hour: "2-digit",
+    minute: "2-digit",
+    hour12: false,
+  }).formatToParts(now);
+
+  const weekday = luandaParts.find(
+    (part) => part.type === "weekday"
+  )?.value;
+
+  const hour = Number(
+    luandaParts.find(
+      (part) => part.type === "hour"
+    )?.value
+  );
+
+  const minute = Number(
+    luandaParts.find(
+      (part) => part.type === "minute"
+    )?.value
+  );
+
+  const dayMap: Record<string, number> = {
+    Sun: 0,
+    Mon: 1,
+    Tue: 2,
+    Wed: 3,
+    Thu: 4,
+    Fri: 5,
+    Sat: 6,
+  };
+
+  const currentDay = dayMap[weekday ?? ""];
 
   const currentMinutes =
-    now.getHours() * 60 + now.getMinutes();
+    hour * 60 + minute;
 
   for (const program of programs) {
     const schedule = program.schedule.find((slot) => {
@@ -35,8 +79,11 @@ function getCurrentProgram(): CurrentProgram {
         .split(":")
         .map(Number);
 
-      const start = startHour * 60 + startMinute;
-      const end = endHour * 60 + endMinute;
+      const start =
+        startHour * 60 + startMinute;
+
+      const end =
+        endHour * 60 + endMinute;
 
       return (
         currentMinutes >= start &&
@@ -64,8 +111,19 @@ export default function RadioPanel() {
     setVolume,
   } = useRadio();
 
+  const playerRef =
+    useRef<HTMLDivElement>(null);
+
   const [currentProgram, setCurrentProgram] =
-    useState<CurrentProgram>(getCurrentProgram());
+    useState<CurrentProgram>(
+      getCurrentProgram()
+    );
+
+  const [showProgramInfo, setShowProgramInfo] =
+    useState(false);
+
+  const [slidePosition, setSlidePosition] =
+    useState<SlidePosition | null>(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -75,125 +133,181 @@ export default function RadioPanel() {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowProgramInfo(
+        (previous) => !previous
+      );
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  useLayoutEffect(() => {
+    function updateSlidePosition() {
+      const player =
+        playerRef.current;
+
+      const programas =
+        document.getElementById(
+          "menu-programas"
+        );
+
+      const contactos =
+        document.getElementById(
+          "menu-contactos"
+        );
+
+      if (
+        !player ||
+        !programas ||
+        !contactos
+      ) {
+        return;
+      }
+
+      const playerRect =
+        player.getBoundingClientRect();
+
+      const programasRect =
+        programas.getBoundingClientRect();
+
+      const contactosRect =
+        contactos.getBoundingClientRect();
+
+      const left =
+        programasRect.left -
+        playerRect.left;
+
+      const right =
+        contactosRect.right -
+        playerRect.left;
+
+      const width =
+        right - left;
+
+      if (width > 0) {
+        setSlidePosition({
+          left,
+          width,
+        });
+      }
+    }
+
+    updateSlidePosition();
+
+    const frame =
+      requestAnimationFrame(
+        updateSlidePosition
+      );
+
+    window.addEventListener(
+      "resize",
+      updateSlidePosition
+    );
+
+    return () => {
+      cancelAnimationFrame(frame);
+
+      window.removeEventListener(
+        "resize",
+        updateSlidePosition
+      );
+    };
+  }, []);
+
   function handleVolumeChange(
     event: React.ChangeEvent<HTMLInputElement>
   ) {
-    setVolume(Number(event.target.value));
+    setVolume(
+      Number(event.target.value)
+    );
   }
 
   return (
     <div className="w-full border-b border-gray-200 bg-white shadow-sm">
-
-      {/* =====================================================
-          MESMO PERÍMETRO HORIZONTAL DA CAPA
-      ===================================================== */}
-      <div className="mx-auto w-full max-w-[1600px] px-4 md:px-6 lg:px-8">
-
-        <div className="relative flex min-h-[76px] w-full items-center md:min-h-[82px]">
-
-          {/* =====================================================
-              BOTÃO PLAY
-          ===================================================== */}
-          <button
-            type="button"
-            onClick={toggle}
-            aria-label={
-              isPlaying
-                ? "Parar Rádio Relato"
-                : "Emissão em Directo"
-            }
-            className={`flex shrink-0 items-center gap-2 rounded-full px-5 py-2.5 text-sm font-black leading-none text-white shadow-md transition ${
-              isPlaying
-                ? "bg-blue-700 hover:bg-blue-800"
-                : "bg-red-600 hover:bg-red-700"
-            }`}
-          >
-            <span className="text-base leading-none">
-              ▶
-            </span>
-
-            <span>
-              {isPlaying
-                ? "EMISSÃO EM DIRECTO"
-                : "OUVIR RÁDIO RELATO"}
-            </span>
-          </button>
-
-          {/* =====================================================
-              PROGRAMA ATUAL
-          ===================================================== */}
-          <div className="ml-4 min-w-[170px]">
-
-            <div className="mb-0.5 flex items-center gap-2">
-
-              {isPlaying && (
-                <span className="h-2 w-2 animate-pulse rounded-full bg-red-600" />
-              )}
-
-              <span
-                className={`text-xs font-black uppercase tracking-[0.14em] ${
-                  isPlaying
-                    ? "text-red-600"
-                    : "text-gray-500"
-                }`}
-              >
-                {isPlaying
-                  ? "NO AR"
-                  : "PROGRAMAÇÃO"}
+      <div
+        ref={playerRef}
+        className="relative mx-auto w-full max-w-[1600px] px-4 md:px-6 lg:px-8"
+      >
+        <div className="flex min-h-[70px] w-full items-center">
+          <div className="flex w-[205px] shrink-0 items-center">
+            <button
+              type="button"
+              onClick={toggle}
+              aria-label={
+                isPlaying
+                  ? "Parar Rádio Relato"
+                  : "Ouvir Rádio Relato"
+              }
+              className={`flex h-8 w-[138px] items-center justify-center gap-1.5 rounded-md text-[11px] font-black leading-none text-white shadow-sm transition-all duration-300 ${
+                isPlaying
+                  ? "bg-blue-700 hover:bg-blue-800"
+                  : "bg-red-600 hover:bg-red-700"
+              }`}
+            >
+              <span className="text-[11px] leading-none">
+                ▶
               </span>
 
-            </div>
-
-            <div className="truncate text-lg font-black leading-tight text-gray-950 md:text-xl">
-              {currentProgram.name}
-            </div>
-
-            {currentProgram.start &&
-              currentProgram.end && (
-                <div className="mt-0.5 text-xs font-semibold text-gray-500 md:text-sm">
-                  {currentProgram.start} —{" "}
-                  {currentProgram.end}
-                </div>
-              )}
-
+              <span>
+                OUVIR RÁDIO
+              </span>
+            </button>
           </div>
 
-          {/* =====================================================
-              DESCRIÇÃO EM MOVIMENTO
+          <div className="min-w-0 flex-1 overflow-hidden">
+            <div className="flex w-full min-w-0 items-center">
+              <div className="relative mr-5 flex h-8 w-[190px] shrink-0 items-center overflow-hidden">
+                <div
+                  className={`absolute left-0 flex items-center gap-2 transition-all duration-700 ease-out ${
+                    showProgramInfo
+                      ? "-translate-x-5 scale-95 opacity-0"
+                      : "translate-x-0 scale-100 opacity-100"
+                  }`}
+                >
+                  {isPlaying && (
+                    <span className="relative flex h-2.5 w-2.5 items-center justify-center">
+                      <span className="absolute h-2.5 w-2.5 animate-ping rounded-full bg-red-500 opacity-40" />
+                      <span className="relative h-2 w-2 rounded-full bg-red-600" />
+                    </span>
+                  )}
 
-              ESTE AJUSTE JÁ ESTAVA PERFEITO.
-              NÃO ALTERAR.
-          ===================================================== */}
-          <div
-            className="
-              absolute
-              left-[27.5%]
-              hidden
-              w-[45%]
-              overflow-hidden
-              lg:block
-            "
-          >
-            <div className="marquee-container">
+                  <span
+                    className={`text-sm font-semibold leading-none ${
+                      isPlaying
+                        ? "text-red-600"
+                        : "text-blue-700"
+                    }`}
+                  >
+                    {isPlaying
+                      ? "No Ar"
+                      : "Programação"}
+                  </span>
+                </div>
 
-              <div
-                key={currentProgram.description}
-                className="marquee-text text-sm font-bold text-blue-600 xl:text-base"
-              >
-                {currentProgram.description}
+                <div
+                  className={`absolute left-0 flex items-center gap-2 transition-all duration-700 ease-out ${
+                    showProgramInfo
+                      ? "translate-x-0 scale-100 opacity-100"
+                      : "translate-x-5 scale-95 opacity-0"
+                  }`}
+                >
+                  <span className="relative flex h-2.5 w-2.5 items-center justify-center">
+                    <span className="absolute h-2.5 w-2.5 animate-pulse rounded-full bg-blue-400 opacity-40" />
+                    <span className="relative h-2 w-2 rounded-full bg-blue-600" />
+                  </span>
+
+                  <span className="truncate text-[15px] font-medium leading-none text-gray-900">
+                    {currentProgram.name}
+                  </span>
+                </div>
               </div>
 
             </div>
           </div>
 
-          {/* =====================================================
-              VOLUME
-
-              Fica preso ao lado direito do mesmo perímetro
-              da capa.
-          ===================================================== */}
-          <div className="ml-auto flex h-full shrink-0 items-center gap-2 border-l border-gray-200 pl-3 sm:gap-3 sm:pl-4">
-
+          <div className="flex h-[44px] w-[150px] shrink-0 items-center gap-2 border-l border-gray-200 pl-4">
             <span
               className="flex h-5 w-5 shrink-0 items-center justify-center text-gray-700"
               aria-hidden="true"
@@ -209,16 +323,33 @@ export default function RadioPanel() {
               value={volume}
               onChange={handleVolumeChange}
               aria-label="Volume da Rádio Relato"
-              className="h-1.5 w-16 cursor-pointer accent-blue-700 sm:w-24 md:w-28"
+              className="h-1.5 w-20 cursor-pointer accent-blue-700"
             />
 
-            <span className="w-8 text-right text-[11px] font-black text-gray-600 sm:w-9">
+            <span className="w-8 text-right text-[10px] font-black text-gray-600">
               {Math.round(volume * 100)}%
             </span>
-
           </div>
-
         </div>
+
+        {slidePosition && (
+          <div
+            className="pointer-events-none absolute top-1/2 z-10 -translate-y-1/2 overflow-hidden"
+            style={{
+              left: `${slidePosition.left}px`,
+              width: `${slidePosition.width}px`,
+            }}
+          >
+            <div className="marquee-container w-full overflow-hidden">
+              <div
+                key={currentProgram.description}
+                className="marquee-text whitespace-nowrap text-sm font-bold text-blue-600 xl:text-base"
+              >
+                {currentProgram.description}
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

@@ -36,7 +36,11 @@ const programs = [
     category: "Especial Jornada",
     description:
       "O espaço especial da Rádio Relato para acompanhar as grandes jornadas desportivas, ao fim de semana ou em edições extraordinárias durante a semana.",
-    schedule: ["Fim de semana", "Edições extraordinárias"],
+    schedule: [
+      "Sábado · 15h00 — 19h00",
+      "Domingo · 15h00 — 19h00",
+      "Edições excepcionais durante a semana",
+    ],
     image: "/programas/trumunu-online.jpg",
     href: "/programas/trumunu-online",
     type: "especial",
@@ -59,13 +63,7 @@ export default function ProgramsSection() {
   return (
     <section className="bg-white py-12 md:py-16">
       <div className="mx-auto w-full max-w-[1600px] px-4 md:px-6 lg:px-8">
-
-        {/* =====================================================
-            CABEÇALHO
-        ===================================================== */}
-
         <div className="mb-8 flex items-end justify-between gap-4">
-
           <div>
             <p className="text-sm font-black uppercase tracking-[0.18em] text-red-600">
               Rádio Relato
@@ -87,50 +85,32 @@ export default function ProgramsSection() {
           >
             Ver todos →
           </Link>
-
         </div>
 
-        {/* =====================================================
-            BOLA INFORMATIVA — PROGRAMA PRINCIPAL
-        ===================================================== */}
-
         <article className="group overflow-hidden rounded-3xl bg-blue-950 shadow-xl">
-
           <Link
             href={mainProgram.href}
             className="grid lg:grid-cols-[1.15fr_1fr]"
           >
-
-            {/* IMAGEM */}
-
-            <div className="relative min-h-[300px] overflow-hidden bg-blue-900 md:min-h-[400px] lg:min-h-[440px]">
-
+            <div className="relative min-h-[300px] overflow-hidden bg-blue-950 md:min-h-[400px] lg:min-h-[440px]">
               <Image
                 src={mainProgram.image}
                 alt={mainProgram.title}
                 fill
                 sizes="(max-width: 1024px) 100vw, 55vw"
-                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                className="object-contain object-center transition-transform duration-700 group-hover:scale-[1.02]"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-t from-blue-950/85 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-blue-950/95" />
-
-              {/* ETIQUETA */}
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-950/30 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:via-transparent lg:to-blue-950/90" />
 
               <div className="absolute left-5 top-5 md:left-7 md:top-7">
-
                 <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-black uppercase tracking-[0.08em] text-white shadow-lg">
                   Programa principal
                 </span>
-
               </div>
-
             </div>
 
-            {/* CONTEÚDO */}
-
             <div className="flex flex-col justify-center p-7 md:p-10 lg:p-12">
-
               <p className="text-sm font-black uppercase tracking-[0.14em] text-red-400 md:text-base">
                 Informação Desportiva
               </p>
@@ -143,16 +123,12 @@ export default function ProgramsSection() {
                 {mainProgram.description}
               </p>
 
-              {/* HORÁRIOS */}
-
               <div className="mt-7">
-
                 <p className="mb-3 text-xs font-bold uppercase tracking-[0.12em] text-blue-300">
                   Emissão
                 </p>
 
                 <div className="flex flex-wrap gap-2">
-
                   {mainProgram.schedule.map((item) => (
                     <span
                       key={item}
@@ -161,36 +137,21 @@ export default function ProgramsSection() {
                       {item}
                     </span>
                   ))}
-
                 </div>
-
               </div>
 
-              {/* CTA */}
-
               <div className="mt-8">
-
                 <span className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-black text-blue-950 transition group-hover:bg-red-600 group-hover:text-white">
                   Conhecer o programa
                   <span className="ml-2 text-lg">→</span>
                 </span>
-
               </div>
-
             </div>
-
           </Link>
-
         </article>
 
-        {/* =====================================================
-            BASTIDOR DESPORTIVO + TRUMUNU ONLINE
-        ===================================================== */}
-
         <div className="mt-6 grid gap-5 md:grid-cols-2">
-
           {regularPrograms.map((program) => {
-
             const isSpecial = program.type === "especial";
 
             return (
@@ -202,32 +163,23 @@ export default function ProgramsSection() {
                     : "border border-gray-400 bg-white"
                 }`}
               >
-
                 <Link
                   href={program.href}
                   className="flex min-h-[210px]"
                 >
-
-                  {/* IMAGEM */}
-
                   <div className="relative w-[42%] shrink-0 overflow-hidden bg-blue-950">
-
                     <Image
                       src={program.image}
                       alt={program.title}
                       fill
                       sizes="320px"
-                      className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                      className="object-contain object-center transition-transform duration-700 group-hover:scale-[1.02]"
                     />
 
                     <div className="absolute inset-0 bg-gradient-to-r from-transparent to-blue-950/60" />
-
                   </div>
 
-                  {/* CONTEÚDO */}
-
                   <div className="flex flex-1 flex-col justify-center p-5 md:p-6">
-
                     <p
                       className={`text-sm font-black uppercase tracking-[0.12em] md:text-base ${
                         isSpecial ? "text-red-400" : "text-red-600"
@@ -254,60 +206,41 @@ export default function ProgramsSection() {
                       {program.description}
                     </p>
 
-                    {/* HORÁRIO */}
-
                     <div className="mt-4 flex flex-wrap gap-2">
-
                       {program.schedule.map((item) => (
                         <span
                           key={item}
                           className={`text-xs font-bold ${
-                            isSpecial
-                              ? "text-blue-200"
-                              : "text-gray-800"
+                            isSpecial ? "text-blue-200" : "text-gray-800"
                           }`}
                         >
                           {item}
                         </span>
                       ))}
-
                     </div>
 
                     <span
                       className={`mt-4 text-sm font-black ${
-                        isSpecial
-                          ? "text-white"
-                          : "text-blue-950"
+                        isSpecial ? "text-white" : "text-blue-950"
                       }`}
                     >
                       Ver programa →
                     </span>
-
                   </div>
-
                 </Link>
-
               </article>
             );
           })}
-
         </div>
 
-        {/* =====================================================
-            MOBILE
-        ===================================================== */}
-
         <div className="mt-6 md:hidden">
-
           <Link
             href="/programas"
             className="inline-flex rounded-full border border-blue-950 px-5 py-2.5 text-sm font-bold text-blue-950 transition hover:bg-blue-950 hover:text-white"
           >
             Ver todos os programas →
           </Link>
-
         </div>
-
       </div>
     </section>
   );

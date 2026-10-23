@@ -1,64 +1,77 @@
-import { programs, defaultProgram } from "@/data/programs";
+
+"use client";
+
+import { useEffect, useState } from "react";
+import { defaultProgram } from "@/data/programs";
+
+import {
+  getCurrentProgram,
+  getDayName,
+  getNextProgram,
+  type DisplayProgram,
+} from "@/data/program-schedule";
 
 export default function HeroLiveCard() {
+  const [currentProgram, setCurrentProgram] =
+    useState<DisplayProgram>(defaultProgram);
 
-  const currentProgram = programs[0] || defaultProgram;
-  const nextProgram = programs[1];
+  const [nextProgram, setNextProgram] =
+    useState<DisplayProgram | null>(null);
 
+  useEffect(() => {
+    function updatePrograms() {
+      setCurrentProgram(getCurrentProgram());
+      setNextProgram(getNextProgram());
+    }
+
+    updatePrograms();
+
+    const interval = window.setInterval(
+      updatePrograms,
+      30_000,
+    );
+
+    return () => window.clearInterval(interval);
+  }, []);
 
   return (
-    <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-3xl p-6 text-white flex flex-col justify-between min-h-[300px]">
-
-      {/* Estado da rádio */}
+    <div className="flex min-h-[300px] flex-col justify-between rounded-3xl border border-white/20 bg-white/10 p-6 text-white backdrop-blur-md">
       <div>
-
-        <div className="flex items-center gap-2 mb-5">
-
+        <div className="mb-5 flex items-center gap-2">
           <span className="relative flex h-3 w-3">
-            <span className="absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75 animate-ping"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-red-600"></span>
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-red-500 opacity-75" />
+            <span className="relative inline-flex h-3 w-3 rounded-full bg-red-600" />
           </span>
 
-          <span className="text-sm font-bold text-red-300 uppercase">
+          <span className="text-sm font-bold uppercase text-red-300">
             No Ar Agora
           </span>
-
         </div>
-
 
         <h2 className="text-2xl font-extrabold">
           {currentProgram.name}
         </h2>
 
-
-        <p className="mt-3 text-blue-100 text-sm">
+        <p className="mt-3 text-sm text-blue-100">
           {currentProgram.description}
         </p>
-
       </div>
 
-
-      {/* Próximo programa */}
       {nextProgram && (
         <div className="mt-8 border-t border-white/20 pt-5">
-
-          <span className="text-xs text-blue-200 uppercase">
+          <span className="text-xs uppercase text-blue-200">
             A seguir
           </span>
-
 
           <h3 className="mt-2 text-lg font-bold">
             {nextProgram.name}
           </h3>
 
-
-          <p className="text-sm text-blue-200 mt-1">
-            {nextProgram.start}
+          <p className="mt-2 text-sm text-blue-100">
+            {getDayName(nextProgram.day)} · {nextProgram.start}
           </p>
-
         </div>
       )}
-
     </div>
   );
 }

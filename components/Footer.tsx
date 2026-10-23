@@ -1,5 +1,4 @@
-﻿
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 
 const navigation = [
@@ -15,16 +14,15 @@ const navigation = [
 export default function Footer() {
   return (
     <footer className="bg-blue-950 text-white">
-
       {/* Área principal */}
       <div className="mx-auto w-full max-w-[1600px] px-4 py-12 md:px-6 md:py-14 lg:px-8">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
 
-          {/* Logo e identidade */}
+          {/* Identidade */}
           <div>
             <Link href="/" className="inline-block">
               <Image
-            src="/logo-radio-relato.png"
+                src="/logo-radio-relato.png"
                 alt="Rádio Relato"
                 width={220}
                 height={90}
@@ -33,7 +31,7 @@ export default function Footer() {
             </Link>
 
             <p className="mt-4 text-base font-semibold italic text-white/90">
-              Desporto com paixão e alma!
+              Paixão pelo desporto!
             </p>
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-white/60">
@@ -64,56 +62,34 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Rádio Relato */}
-          <div>
-            <h3 className="text-sm font-black uppercase tracking-[0.16em] text-red-500">
-              Rádio Relato
-            </h3>
-
-            <div className="mt-5 space-y-3 text-sm leading-6 text-white/65">
-              <p>
-                A sua rádio de desporto.
-              </p>
-
-              <p>
-                Informação desportiva, análise,
-                programas e acompanhamento das
-                principais competições.
-              </p>
-
-              <p className="font-semibold text-white/90">
-                Desporto com paixão e alma!
-              </p>
-            </div>
-          </div>
-
-          {/* Contactos e redes sociais */}
+          {/* Contactos */}
           <div>
             <h3 className="text-sm font-black uppercase tracking-[0.16em] text-red-500">
               Contactos
             </h3>
 
-            <div className="mt-5 space-y-4 text-sm text-white/65">
-
+            <div className="mt-5 space-y-4">
               {/* Telefone */}
               <a
                 href="tel:+244924390528"
-                className="flex items-center gap-3 transition hover:text-white"
+                className="flex items-center gap-3 text-sm text-white/65 transition hover:text-white"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="h-5 w-5 shrink-0 text-red-500"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.09l-4.14-1.035a1.125 1.125 0 0 0-1.173.417l-.908 1.11a1.125 1.125 0 0 1-1.21.337 12.035 12.035 0 0 1-7.5-7.5 1.125 1.125 0 0 1 .337-1.21l1.11-.908c.36-.294.52-.766.417-1.173L6.806 2.94A1.125 1.125 0 0 0 5.716 2.09H4.5A2.25 2.25 0 0 0 2.25 4.34v2.41Z"
-                  />
-                </svg>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="h-4 w-4 text-red-500"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.09l-4.14-1.035a1.125 1.125 0 0 0-1.173.417l-.908 1.11a1.125 1.125 0 0 1-1.21.337 12.035 12.035 0 0 1-7.5-7.5 1.125 1.125 0 0 1 .337-1.21l1.11-.908c.36-.294.52-.766.417-1.173L6.806 2.94A1.125 1.125 0 0 0 5.716 2.09H4.5A2.25 2.25 0 0 0 2.25 4.34v2.41Z"
+                    />
+                  </svg>
+                </span>
 
                 <span>+244 924 390 528</span>
               </a>
@@ -121,22 +97,24 @@ export default function Footer() {
               {/* Email */}
               <a
                 href="mailto:radiorelato01@gmail.com"
-                className="flex items-center gap-3 transition hover:text-white"
+                className="flex items-center gap-3 text-sm text-white/65 transition hover:text-white"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  className="h-5 w-5 shrink-0 text-red-500"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 7.5 10.94 13a1.875 1.875 0 0 0 2.12 0L21 7.5M5.25 19.5h13.5A2.25 2.25 0 0 0 21 17.25v-10.5A2.25 2.25 0 0 0 18.75 4.5H5.25A2.25 2.25 0 0 0 3 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z"
-                  />
-                </svg>
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/10 bg-white/5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    className="h-4 w-4 text-red-500"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M3 7.5 10.94 13a1.875 1.875 0 0 0 2.12 0L21 7.5M5.25 19.5h13.5A2.25 2.25 0 0 0 21 17.25v-10.5A2.25 2.25 0 0 0 18.75 4.5H5.25A2.25 2.25 0 0 0 3 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Z"
+                    />
+                  </svg>
+                </span>
 
                 <span className="break-all">
                   radiorelato01@gmail.com
@@ -144,14 +122,12 @@ export default function Footer() {
               </a>
             </div>
 
-            {/* Redes sociais */}
             <div className="mt-7">
               <p className="mb-4 text-xs font-bold uppercase tracking-[0.14em] text-white/50">
-                Siga a Rádio Relato
+                Redes sociais
               </p>
 
               <div className="flex items-center gap-3">
-
                 {/* Facebook */}
                 <a
                   href="https://facebook.com/radiorelato.1893"
@@ -221,7 +197,35 @@ export default function Footer() {
                     <path d="M23.5 6.2a3 3 0 0 0-2.11-2.12C19.52 3.5 12 3.5 12 3.5s-7.52 0-9.39.58A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.11 2.12c1.87.58 9.39.58 9.39.58s7.52 0 9.39-.58a3 3 0 0 0 2.11-2.12A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.75 15.75v-7.5L16.25 12l-6.5 3.75Z" />
                   </svg>
                 </a>
+              </div>
+            </div>
+          </div>
 
+          {/* Presença digital / Design */}
+          <div>
+            <h3 className="text-sm font-black uppercase tracking-[0.16em] text-red-500">
+              Presença Digital
+            </h3>
+
+            <div className="mt-5">
+              <p className="text-sm leading-6 text-white/65">
+                A Rádio Relato acompanha o desporto através da informação,
+                da análise e das plataformas digitais.
+              </p>
+
+              <div className="mt-6 border-l-2 border-red-500 pl-4">
+                <p className="text-xs font-bold uppercase tracking-[0.14em] text-white/45">
+                  Desenvolvimento e Design
+                </p>
+
+                <p className="mt-2 text-sm font-semibold text-white/85">
+                  JS Prime Design
+                </p>
+
+                <p className="mt-1 text-xs leading-5 text-white/50">
+                  Identidade visual, comunicação e desenvolvimento
+                  da presença digital da Rádio Relato.
+                </p>
               </div>
             </div>
           </div>
@@ -230,26 +234,22 @@ export default function Footer() {
 
       {/* Barra inferior */}
       <div className="border-t border-white/10">
-        <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-3 px-4 py-5 text-center md:flex-row md:items-center md:justify-between md:px-6 md:text-left lg:px-8">
-
+        <div className="mx-auto flex w-full max-w-[1600px] flex-col gap-3 px-4 py-5 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
           <p className="text-xs text-white/45">
             © {new Date().getFullYear()} Rádio Relato. Todos os direitos reservados.
           </p>
 
-          <p className="text-xs text-white/45">
-            Design:{" "}
-            <span className="font-semibold text-white/75">
+          <p className="text-xs text-white/45 md:text-right">
+            Design e desenvolvimento:
+            <span className="ml-1 font-semibold text-white/75">
               JS Prime Design
             </span>
           </p>
-
         </div>
       </div>
 
       {/* Linha final */}
       <div className="h-1 bg-gradient-to-r from-red-600 via-red-500 to-blue-700" />
-
     </footer>
   );
 }
-

@@ -1,3 +1,4 @@
+
 # dependencies
 node_modules/
 
@@ -15,3 +16,30 @@ out/
 # TypeScript
 *.tsbuildinfo
 next-env.d.ts
+
+# Backup files
+*.bak
+*.bak-*
+*.before-*
+*.antes-*
+*.corrompido*
+*.corrompida*
+*.backup.ts
+*.backup.tsx
+*.pre-recovery.bak
+*.corrompido-*
+
+# Temporary extraction and test files
+.temp-*
+extract-*.cjs
+portal-chunk.js
+portal-data-test.json
+tsc-check.txt
+tsc-errors.txt
+
+# Downloaded installers
+*.msi
+
+# Downloaded website resources
+public/modalidades/Analisar ficheiro news.ts.html
+public/modalidades/Analisar ficheiro news.ts_files/

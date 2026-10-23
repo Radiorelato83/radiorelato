@@ -30,54 +30,69 @@ export function RadioProvider({
   const [volume, setVolumeState] = useState(0.7);
 
   function createAudio() {
-    if (!audioRef.current) {
-      const audio = document.createElement("audio");
-
-      audio.src = STREAM_URL;
-      audio.autoplay = false;
-      audio.preload = "none";
-      audio.volume = volume;
-
-      audio.onplay = () => {
-        console.log("Rádio Relato no ar");
-        setIsPlaying(true);
-      };
-
-      audio.onpause = () => {
-        setIsPlaying(false);
-      };
-
-      audio.onerror = (error) => {
-        console.error("Erro no streaming:", error);
-        setIsPlaying(true);
-      };
-
-      audioRef.current = audio;
-    }
-  }
-
-  async function toggle() {
-    createAudio();
-
-    if (!audioRef.current) {
-      return;
+    if (audioRef.current) {
+      return audioRef.current;
     }
 
-    if (isPlaying) {
-      audioRef.current.pause();
-      return;
-    }
+    const audio = new Audio(STREAM_URL);
 
-    try {
-      await audioRef.current.play();
-    } catch (error) {
-      console.error("Erro ao iniciar Rádio Relato:", error);
+    audio.preload = "none";
+    audio.volume = volume;
+
+    audio.onplay = () => {
+      console.log("Rádio Relato no ar");
+      setIsPlaying(true);
+    };
+
+    audio.onpause = () => {
       setIsPlaying(false);
-    }
+    };
+
+    audio.onerror = (event) => {
+      console.error("Erro no streaming:", event);
+      setIsPlaying(false);
+    };
+
+    audioRef.current = audio;
+
+    return audio;
   }
+
+ async function toggle() {
+  const audio = createAudio();
+
+  if (!audio.paused) {
+    audio.pause();
+    return;
+  }
+
+  try {
+    await audio.play();
+  } catch (error) {
+    if (
+      error instanceof DOMException &&
+      error.name === "AbortError"
+    ) {
+      console.warn(
+        "Reprodução interrompida antes de iniciar."
+      );
+      return;
+    }
+
+    console.error(
+      "Erro ao iniciar Rádio Relato:",
+      error
+    );
+
+    setIsPlaying(false);
+  }
+}
 
   function setVolume(value: number) {
-    const newVolume = Math.min(1, Math.max(0, value));
+    const newVolume = Math.min(
+      1,
+      Math.max(0, value)
+    );
 
     setVolumeState(newVolume);
 

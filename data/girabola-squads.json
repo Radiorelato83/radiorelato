@@ -1,0 +1,4258 @@
+[
+  {
+    "sourceName": "1º de Maio de Benguela",
+    "teamId": "primeiromaio",
+    "club": "Estrela 1.º de Maio",
+    "players": [
+      {
+        "id": "1JXIB83",
+        "name": "DIMONIQUENE KAPEMBE SEGUNDA BONGUE",
+        "fullName": "DIMONIQUENE KAPEMBE SEGUNDA BONGUE",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSRCP9",
+        "name": "Deco",
+        "fullName": "MOISÉS ALBERTO CALEPI",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LSUTX8",
+        "name": "DANIEL CHACULEMBA",
+        "fullName": "DANIEL CHACULEMBA",
+        "number": 28,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PEY7",
+        "name": "Muila Lengo Congolo",
+        "fullName": "Muila Lengo Congolo",
+        "number": 16,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M9IBY1",
+        "name": "Miguel Agostinho Dey",
+        "fullName": "Miguel Agostinho Dey",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1HKV2",
+        "name": "MOISES MBUTA DOMINGOS",
+        "fullName": "MOISES MBUTA DOMINGOS",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MALEZ5",
+        "name": "VICENTE DOMINGOS",
+        "fullName": "VICENTE DOMINGOS",
+        "number": 34,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJH1X4",
+        "name": "Fernando Mateus Duarte Duarte",
+        "fullName": "Fernando Mateus Duarte Duarte",
+        "number": 20,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZTK20",
+        "name": "Luis Simoes Escovalo",
+        "fullName": "Luis Simoes Escovalo",
+        "number": 19,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NB4BP9",
+        "name": "SIMÃO CULECA GONGA",
+        "fullName": "SIMÃO CULECA GONGA",
+        "number": 22,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NAVZJ4",
+        "name": "TADEU NUMBI DA SILVA JAKE",
+        "fullName": "TADEU NUMBI DA SILVA JAKE",
+        "number": 3,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MQVBD5",
+        "name": "Odenir Tavares Pereira Jorge",
+        "fullName": "Odenir Tavares Pereira Jorge",
+        "number": 14,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KF4F49",
+        "name": "Avelino Mussili Kassanhica",
+        "fullName": "Avelino Mussili Kassanhica",
+        "number": 29,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JYN4K6",
+        "name": "MÁRCIO ARMANDO GONÇALVES LUVAMBO",
+        "fullName": "MÁRCIO ARMANDO GONÇALVES LUVAMBO",
+        "number": 7,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K176E0",
+        "name": "Rodrigues Muehombo",
+        "fullName": "Rodrigues Muehombo",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZ4J23",
+        "name": "PAULO BALACA MUTOSSI",
+        "fullName": "PAULO BALACA MUTOSSI",
+        "number": 24,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1SG53",
+        "name": "ANTÓNIO PASCOAL",
+        "fullName": "ANTÓNIO PASCOAL",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZ4FG4",
+        "name": "ANTÓNIO LUCAMBA PESSELA",
+        "fullName": "ANTÓNIO LUCAMBA PESSELA",
+        "number": 26,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L96AR2",
+        "name": "ANTONIO LENDE TCHIMUKU",
+        "fullName": "ANTONIO LENDE TCHIMUKU",
+        "number": 99,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NB4DQ1",
+        "name": "JOAQUIM KANHIHI TCHINGOMBE",
+        "fullName": "JOAQUIM KANHIHI TCHINGOMBE",
+        "number": 56,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NB49X0",
+        "name": "FRANCISCO NGALANGUI TCHITANE",
+        "fullName": "FRANCISCO NGALANGUI TCHITANE",
+        "number": 33,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0C7S4",
+        "name": "JOSE MARCOS PEREIRA TCHIVINGA",
+        "fullName": "JOSE MARCOS PEREIRA TCHIVINGA",
+        "number": 15,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZJEU2",
+        "name": "GELSON TELES",
+        "fullName": "GELSON TELES",
+        "number": 18,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXHXL1",
+        "name": "ELISEU ANTÓNIO BORGES VARELA",
+        "fullName": "ELISEU ANTÓNIO BORGES VARELA",
+        "number": 6,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KF4IX9",
+        "name": "Moises Maquico Lua",
+        "fullName": "Moises Maquico Lua",
+        "number": 37,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QF49D2",
+        "name": "DAMIÃO RAIMUNDO NICOLAU",
+        "fullName": "DAMIÃO RAIMUNDO NICOLAU",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1ND4NN2",
+        "name": "KIJUNGU KITUMBA FRANCISCO",
+        "fullName": "KIJUNGU KITUMBA FRANCISCO",
+        "number": 25,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1M4E0",
+        "name": "MALEBANI RABBY",
+        "fullName": "MALEBANI RABBY",
+        "number": 31,
+        "position": "Avançado",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Wiliete",
+    "teamId": "wiliete",
+    "club": "Wiliete de Benguela",
+    "players": [
+      {
+        "id": "1JZ4N21",
+        "name": "JOÃO VALONGA BASILIO BARROS",
+        "fullName": "JOÃO VALONGA BASILIO BARROS",
+        "number": 26,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JJFIJ0",
+        "name": "AUGUSTO MANUEL BALSA",
+        "fullName": "AUGUSTO MANUEL BALSA",
+        "number": 15,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJZ6E0",
+        "name": "SILVA HINÁRIO ANTÓNIO",
+        "fullName": "SILVA HINÁRIO ANTÓNIO",
+        "number": 3,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SN8AC3",
+        "name": "Lukman Idowu Bello",
+        "fullName": "Lukman Idowu Bello",
+        "number": 18,
+        "position": "Avançado",
+        "nationality": "Democratic Republic of the Congo"
+      },
+      {
+        "id": "1JRU7C5",
+        "name": "ARMINDO GONÇALVES CANJI",
+        "fullName": "ARMINDO GONÇALVES CANJI",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQNV32",
+        "name": "Carlos Cassissi",
+        "fullName": "Carlos Cassissi",
+        "number": 24,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWU6Z0",
+        "name": "GIOVANI CHIPOPOLO",
+        "fullName": "GIOVANI CHIPOPOLO",
+        "number": 17,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K39NK6",
+        "name": "ANTÓNIO MULE CHITONGO",
+        "fullName": "ANTÓNIO MULE CHITONGO",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1JSJ8",
+        "name": "Francisco Cubuema Matoco",
+        "fullName": "Francisco Cubuema Matoco",
+        "number": 16,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JM7Y97",
+        "name": "ELBER DELGADO",
+        "fullName": "ELBER DELGADO",
+        "number": 31,
+        "position": "Guarda-redes",
+        "nationality": "Cabo Verde"
+      },
+      {
+        "id": "1NI87H8",
+        "name": "FILOMENO PINHEIRO ALBERTO GILOSO",
+        "fullName": "FILOMENO PINHEIRO ALBERTO GILOSO",
+        "number": 21,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PKWT84",
+        "name": "Nayan Gomes",
+        "fullName": "Nayan Gomes",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Brazil"
+      },
+      {
+        "id": "1K36HF0",
+        "name": "Cesar Cangui Uvi Jeremias",
+        "fullName": "Cesar Cangui Uvi Jeremias",
+        "number": 34,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWU0L8",
+        "name": "RODINO DUMBO JOSE",
+        "fullName": "RODINO DUMBO JOSE",
+        "number": 25,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNMJ53",
+        "name": "Emanoel Júnior",
+        "fullName": "Emanoel Júnior",
+        "number": 27,
+        "position": "Defesa",
+        "nationality": "Brazil"
+      },
+      {
+        "id": "1L05V38",
+        "name": "DANIEL ARTUR KAKA",
+        "fullName": "DANIEL ARTUR KAKA",
+        "number": 19,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SCQY89",
+        "name": "António Manuel Victorino Kulica",
+        "fullName": "António Manuel Victorino Kulica",
+        "number": 20,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSRPL0",
+        "name": "ARÃO MANUEL LOLOGI",
+        "fullName": "ARÃO MANUEL LOLOGI",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZR1V5",
+        "name": "ZEFERINO VENANCIO LUSSATI",
+        "fullName": "ZEFERINO VENANCIO LUSSATI",
+        "number": 33,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRV1H9",
+        "name": "VALTER MANUEL MONTEIRO",
+        "fullName": "VALTER MANUEL MONTEIRO",
+        "number": 35,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PU18X2",
+        "name": "Guilherme Neto",
+        "fullName": "Guilherme Neto",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Brazil"
+      },
+      {
+        "id": "1JRXS05",
+        "name": "Camilo Mbule Ngongue",
+        "fullName": "Camilo Mbule Ngongue",
+        "number": 28,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXFL56",
+        "name": "Mabululu",
+        "fullName": "Cristovão Paciência",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSJBH0",
+        "name": "JORGE MENDES CORTE REAL CARNEIRO",
+        "fullName": "JORGE MENDES CORTE REAL CARNEIRO",
+        "number": 7,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRTUE9",
+        "name": "TEODORO EDVALDO RITA TCHISSINGUI",
+        "fullName": "TEODORO EDVALDO RITA TCHISSINGUI",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QVFJM7",
+        "name": "Bocar Sidibé",
+        "fullName": "Bocar Sidibé",
+        "number": 30,
+        "position": "Médio",
+        "nationality": "Mali"
+      },
+      {
+        "id": "1UQNTJ4",
+        "name": "Adenilson Paulo Tchingando",
+        "fullName": "Adenilson Paulo Tchingando",
+        "number": 36,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PVXHT8",
+        "name": "Adriano Watchilala Tchombe",
+        "fullName": "Adriano Watchilala Tchombe",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSJ8T3",
+        "name": "Gibele",
+        "fullName": "DEIVI MIGUEL VIEIRA",
+        "number": 11,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M95S64",
+        "name": "CELIO ALBERTO JUNQUEIRA ZUA",
+        "fullName": "CELIO ALBERTO JUNQUEIRA ZUA",
+        "number": 32,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQNSL6",
+        "name": "Abel Samandi Mbambi",
+        "fullName": "Abel Samandi Mbambi",
+        "number": 40,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NDEMR2",
+        "name": "Eduardo António Henrique capingana",
+        "fullName": "Eduardo António Henrique capingana",
+        "number": 2,
+        "position": "Médio",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "CD Huíla",
+    "teamId": "desphuila",
+    "club": "Desportivo da Huíla",
+    "players": [
+      {
+        "id": "1K1TTD1",
+        "name": "Cristóvão Simão",
+        "fullName": "Cristóvão Simão",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0RBE1",
+        "name": "Adilson Manuel",
+        "fullName": "Adilson Manuel",
+        "number": 3,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NAKGC8",
+        "name": "Dos Santos",
+        "fullName": "ANTONIO DOS SANTOS FUTILA KINANGA",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZR148",
+        "name": "Jo",
+        "fullName": "JOÃO MILAGRE CHIVA SIMÕES",
+        "number": 6,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSJ9J7",
+        "name": "Cabibi",
+        "fullName": "LEONARDO MANUEL ISOLA RAMOS",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K15AH5",
+        "name": "Mauricio Pedro",
+        "fullName": "Mauricio Pedro",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K175G9",
+        "name": "José Mendes",
+        "fullName": "José Mendes",
+        "number": 10,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K13ZM9",
+        "name": "Emanuel Laurindo",
+        "fullName": "Emanuel Laurindo",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K5T6S7",
+        "name": "Ludy",
+        "fullName": "LUCAS ELIAS ANTONIO PAULO",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K173B5",
+        "name": "Elias Daniel",
+        "fullName": "Elias Daniel",
+        "number": 15,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSRFA8",
+        "name": "Milton",
+        "fullName": "MILTON ALBERTO DE OLIVEIRA SUCA",
+        "number": 18,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIYL15",
+        "name": "Alegria Feliciano Safewange",
+        "fullName": "Alegria Feliciano Safewange",
+        "number": 19,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K141M2",
+        "name": "Duarte Kapoela",
+        "fullName": "Duarte Kapoela",
+        "number": 20,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M7IBH3",
+        "name": "Jenivaldo Afonso",
+        "fullName": "Jenivaldo Afonso",
+        "number": 22,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K176V9",
+        "name": "Florentino António",
+        "fullName": "Florentino António",
+        "number": 23,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K140K2",
+        "name": "Isidro Chingango",
+        "fullName": "Isidro Chingango",
+        "number": 24,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QSTPV6",
+        "name": "Milagre Carlos Simba",
+        "fullName": "Milagre Carlos Simba",
+        "number": 25,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K15G24",
+        "name": "Jeremias Pedro",
+        "fullName": "Jeremias Pedro",
+        "number": 26,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PQ2JF4",
+        "name": "Jose Augusto Camati",
+        "fullName": "Jose Augusto Camati",
+        "number": 28,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K174G0",
+        "name": "Pequenino Castro",
+        "fullName": "Pequenino Castro",
+        "number": 29,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MDNGV9",
+        "name": "Diloy Cleberson Bernardo Valerio",
+        "fullName": "Diloy Cleberson Bernardo Valerio",
+        "number": 31,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LNIYJ8",
+        "name": "Jorge Ismael Jose Jose",
+        "fullName": "Jorge Ismael Jose Jose",
+        "number": 33,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1R3L049",
+        "name": "João Baptista Ferraz Samazanga Juny",
+        "fullName": "João Baptista Ferraz Samazanga Juny",
+        "number": 34,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXRG98",
+        "name": "Mirovaldo da Silva vandunem",
+        "fullName": "Mirovaldo da Silva vandunem",
+        "number": 35,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L3KX90",
+        "name": "Constantino Tchicundico Cassoma Tchitunda",
+        "fullName": "Constantino Tchicundico Cassoma Tchitunda",
+        "number": 32,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1TSN8",
+        "name": "Ado Pena",
+        "fullName": "António Pena",
+        "number": 27,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K17IS6",
+        "name": "Angelo Cangu",
+        "fullName": "Angelo Cangu",
+        "number": 21,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1SFM9",
+        "name": "NSAMBO KATENDI",
+        "fullName": "NSAMBO KATENDI",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "1º de Agosto",
+    "teamId": "dago",
+    "club": "CD 1.º de Agosto",
+    "players": [
+      {
+        "id": "1LJU8Q3",
+        "name": "Axel Gaudêncio Mabaqui de Sousa Axel",
+        "fullName": "Axel Gaudêncio Mabaqui de Sousa Axel",
+        "number": 8,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRYBB6",
+        "name": "Bonifacio Francisco Caetano",
+        "fullName": "Bonifacio Francisco Caetano",
+        "number": 5,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXU6F2",
+        "name": "MILTON ANTONIO CANDIDO",
+        "fullName": "MILTON ANTONIO CANDIDO",
+        "number": 2,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNY6E7",
+        "name": "Felisberto Kanjeque Lourenço Carvalho",
+        "fullName": "Felisberto Kanjeque Lourenço Carvalho",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZR6C1",
+        "name": "Francisco Carlos Chilumbo",
+        "fullName": "Francisco Carlos Chilumbo",
+        "number": 20,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSJ4J2",
+        "name": "Samu Tshibamba Dago",
+        "fullName": "Samu Tshibamba Dago",
+        "number": 17,
+        "position": "Por confirmar",
+        "nationality": "Republic of the Congo"
+      },
+      {
+        "id": "1JZ3MQ2",
+        "name": "FERNANDO LOPES DE ALMEIDA",
+        "fullName": "FERNANDO LOPES DE ALMEIDA",
+        "number": 1,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXWMN6",
+        "name": "ERIQUE JOAQUIM MANUEL DE JESUS",
+        "fullName": "ERIQUE JOAQUIM MANUEL DE JESUS",
+        "number": 24,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSKTW9",
+        "name": "Simao Dianzenza",
+        "fullName": "Simao Dianzenza",
+        "number": 3,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXS6R1",
+        "name": "ANTONIO FRANCISCO DOMINGOS",
+        "fullName": "ANTONIO FRANCISCO DOMINGOS",
+        "number": 7,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNY6S0",
+        "name": "Eliseu Sebastião Francisco ESCALÃO DE FORMAÇÃO",
+        "fullName": "Eliseu Sebastião Francisco ESCALÃO DE FORMAÇÃO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JP2N29",
+        "name": "Jose Macaia ganga",
+        "fullName": "Jose Macaia ganga",
+        "number": 16,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PWAAY2",
+        "name": "Enoque José Kabesa",
+        "fullName": "Enoque José Kabesa",
+        "number": 23,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSF794",
+        "name": "Venancio Landu kukula",
+        "fullName": "Venancio Landu kukula",
+        "number": 15,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K16NJ0",
+        "name": "Florindo Machado",
+        "fullName": "Florindo Machado",
+        "number": 9,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSF904",
+        "name": "Bruno de Jesus Manuel",
+        "fullName": "Bruno de Jesus Manuel",
+        "number": 6,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KYQMU3",
+        "name": "ANSELMO MWENI",
+        "fullName": "ANSELMO MWENI",
+        "number": 22,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXS7W4",
+        "name": "BENÇÃO NBONGO EVARISTO NZINGA",
+        "fullName": "BENÇÃO NBONGO EVARISTO NZINGA",
+        "number": 36,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1ML75M8",
+        "name": "Obed Mayamb Mukokiani Obed",
+        "fullName": "Obed Mayamb Mukokiani Obed",
+        "number": 14,
+        "position": "Por confirmar",
+        "nationality": "Democratic Republic of the Congo"
+      },
+      {
+        "id": "1PXU511",
+        "name": "AFONSO DOS SANTOS PAXE",
+        "fullName": "AFONSO DOS SANTOS PAXE",
+        "number": 19,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K26F45",
+        "name": "Carvalho dos Santos",
+        "fullName": "Carvalho dos Santos",
+        "number": 27,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JM8058",
+        "name": "CALEBI YANDA",
+        "fullName": "CALEBI YANDA",
+        "number": 10,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNY6K8",
+        "name": "Fernando Inácio Costa",
+        "fullName": "Fernando Inácio Costa",
+        "number": 11,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M9F1P0",
+        "name": "Cliver Camango Andre",
+        "fullName": "Cliver Camango Andre",
+        "number": 18,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1TDC7R7",
+        "name": "Felix Bulaya",
+        "fullName": "Felix Bulaya",
+        "number": 28,
+        "position": "Por confirmar",
+        "nationality": "Zambia"
+      },
+      {
+        "id": "1V12EK6",
+        "name": "Luciano Manuel dos Santos",
+        "fullName": "Luciano Manuel dos Santos",
+        "number": 25,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Kabuscorp",
+    "teamId": "kabuscorp",
+    "club": "Kabuscorp SC",
+    "players": [
+      {
+        "id": "1JRKU39",
+        "name": "Mankoka Hegene Afonso",
+        "fullName": "Mankoka Hegene Afonso",
+        "number": 18,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SNB179",
+        "name": "Saombe Sukuakueche Ángelo Jorge",
+        "fullName": "Saombe Sukuakueche Ángelo Jorge",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JYP8V8",
+        "name": "Eliseu",
+        "fullName": "ELISEU CABANGA",
+        "number": 3,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNR1R0",
+        "name": "Aluízio Joel André Cacharamba",
+        "fullName": "Aluízio Joel André Cacharamba",
+        "number": 27,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LGPB81",
+        "name": "TEODORO FERNANDES CORREIA",
+        "fullName": "TEODORO FERNANDES CORREIA",
+        "number": 11,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRIUE5",
+        "name": "JOÃO BAPTISTA MISSENGA DE NASCIMENTO",
+        "fullName": "JOÃO BAPTISTA MISSENGA DE NASCIMENTO",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LGPGY7",
+        "name": "ADAIR GARCIA DOMINGOS",
+        "fullName": "ADAIR GARCIA DOMINGOS",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRTXH4",
+        "name": "DIÓGENES CAPEMBA JOÃO",
+        "fullName": "DIÓGENES CAPEMBA JOÃO",
+        "number": 32,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JM7ZR2",
+        "name": "DANIEL KILOLA",
+        "fullName": "DANIEL KILOLA",
+        "number": 15,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K4A836",
+        "name": "Zamorano Lopes",
+        "fullName": "Zamorano Lopes",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXICB5",
+        "name": "MONA MALECO",
+        "fullName": "CELESTINO LUIS MALECO",
+        "number": 17,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1SEN7",
+        "name": "ARTUR MALUNGO",
+        "fullName": "ARTUR MALUNGO",
+        "number": 14,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MPPSB5",
+        "name": "Henock Mangindula",
+        "fullName": "Henock Mangindula",
+        "number": 16,
+        "position": "Defesa",
+        "nationality": "Democratic Republic of the Congo"
+      },
+      {
+        "id": "1TGWGG5",
+        "name": "JORGE MANUEL PINTO",
+        "fullName": "JORGE MANUEL PINTO",
+        "number": 35,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QXNL72",
+        "name": "MVEMBA MATONDO KUANZAMBI",
+        "fullName": "MVEMBA MATONDO KUANZAMBI",
+        "number": 28,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRTVA7",
+        "name": "AUGUSTO MONTEIRO MUALUCANO",
+        "fullName": "AUGUSTO MONTEIRO MUALUCANO",
+        "number": 22,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1N3UHM6",
+        "name": "BAYALA NSIMBA",
+        "fullName": "BAYALA NSIMBA",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JM8HD7",
+        "name": "JOAQUIM PACIENCIA",
+        "fullName": "JOAQUIM PACIENCIA",
+        "number": 19,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWTS88",
+        "name": "ENOQUE BENJAMIM TULA",
+        "fullName": "ENOQUE BENJAMIM TULA",
+        "number": 20,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PK58",
+        "name": "José Semedo Vunge",
+        "fullName": "José Semedo Vunge",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JS6M05",
+        "name": "Alberto Elizeu Xavier",
+        "fullName": "Alberto Elizeu Xavier",
+        "number": 29,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MA68G7",
+        "name": "MAZEBO MAVAMBO JOÃO",
+        "fullName": "MAZEBO MAVAMBO JOÃO",
+        "number": 21,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V363C3",
+        "name": "LIWANDA JOSLIN NDONGALA",
+        "fullName": "LIWANDA JOSLIN NDONGALA",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Democratic Republic of the Congo"
+      },
+      {
+        "id": "1SNEZ57",
+        "name": "Tresor Kuyu Nona",
+        "fullName": "Tresor Kuyu Nona",
+        "number": 25,
+        "position": "Avançado",
+        "nationality": "Democratic Republic of the Congo"
+      },
+      {
+        "id": "1V363A9",
+        "name": "MBALI MONGBONGO SEM",
+        "fullName": "MBALI MONGBONGO SEM",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Democratic Republic of the Congo"
+      }
+    ]
+  },
+  {
+    "sourceName": "Académica do Lobito",
+    "teamId": "lobito",
+    "club": "Académica do Lobito",
+    "players": [
+      {
+        "id": "1JWU4V8",
+        "name": "Lourenço",
+        "fullName": "LOURENÇO CAMBIOMBO SAPALO ADRIANO",
+        "number": 5,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V0Q4P5",
+        "name": "Jorge",
+        "fullName": "JORGE UMBA BAIÃO",
+        "number": 28,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRJ1L5",
+        "name": "Calela",
+        "fullName": "GERVÁSIO DOMINGOS CALELA",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KF4IS2",
+        "name": "Joaquim",
+        "fullName": "Joaquim Francisco Cambanda",
+        "number": 16,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K00768",
+        "name": "Rosário",
+        "fullName": "Rósario Adao Da Costa Cavanda",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PWCQF0",
+        "name": "Miguel",
+        "fullName": "Miguel Dos Santos",
+        "number": 24,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NYJXJ8",
+        "name": "Fernando",
+        "fullName": "FERNANDO ELIAS KACHIKAPA",
+        "number": 36,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K29176",
+        "name": "GERALDO NDJELA",
+        "fullName": "Geraraldo Perdo Feliciano",
+        "number": 21,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MU1RP4",
+        "name": "Florentino",
+        "fullName": "FLORENTINO VASCO GOMES MATEMBA",
+        "number": 11,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PWB407",
+        "name": "José Gonga",
+        "fullName": "JOSÉ KETA GONGA",
+        "number": 38,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXIDN6",
+        "name": "Marcos",
+        "fullName": "MARCOS YANIKI CANDUCO HOLIVIO",
+        "number": 40,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V0Q4R8",
+        "name": "Joel",
+        "fullName": "JOEL MANZAMBI KIBANGO JORGE",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PWDZW1",
+        "name": "Ezequiel",
+        "fullName": "Ezequiel Paulo Julião",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M9SUA5",
+        "name": "Aurélio",
+        "fullName": "AURÉLIO NIVETE LOPAI KAPUCA ( HELI)",
+        "number": 33,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M79NL1",
+        "name": "Leonel",
+        "fullName": "LEONEL AUGUSTO MATEUS LEMOS",
+        "number": 22,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRYAL7",
+        "name": "Manuel",
+        "fullName": "Manuel Pereira Londaka",
+        "number": 6,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NC8YH3",
+        "name": "FARRADA",
+        "fullName": "Maurício Mwatenda Lucas (Farrada)",
+        "number": 26,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2M005",
+        "name": "Nanga",
+        "fullName": "NANGA JOÃO MANUEL",
+        "number": 3,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L13Q80",
+        "name": "Serafim",
+        "fullName": "Serafim Paulina Mapussa",
+        "number": 15,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L60XH8",
+        "name": "Luís Panda",
+        "fullName": "LUÍS NFUMAIASOKA MIGUEL PANDA",
+        "number": 31,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWT9F1",
+        "name": "António",
+        "fullName": "ANTONIO SILVIO MORAIS",
+        "number": 19,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWU6G0",
+        "name": "Muhango",
+        "fullName": "GUILHERME ALBERTO MUHANGO",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UVIZ40",
+        "name": "ANDRÉ ALFREDO JOÃO PANDA",
+        "fullName": "ANDRÉ ALFREDO JOÃO PANDA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRIVB7",
+        "name": "Januário",
+        "fullName": "JANUÁRIO DA CRUZ SESA",
+        "number": 7,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXIDJ3",
+        "name": "Valério",
+        "fullName": "VALÉRIO MAGRINHO TROCO ZAIRE",
+        "number": 29,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PPGLQ5",
+        "name": "Carlos",
+        "fullName": "CARLOS ANTÓNIO CORREIA",
+        "number": 35,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QHQT19",
+        "name": "Jorge Enio",
+        "fullName": "JORGE ENIO ANTONIO DA COSTA",
+        "number": 27,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIWQN1",
+        "name": "Wilson",
+        "fullName": "WILSON DAVID",
+        "number": 25,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": null,
+        "name": "Quiteque",
+        "fullName": "Quiteque",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": null,
+        "name": "Pinto",
+        "fullName": "Pinto",
+        "number": 14,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": null,
+        "name": "Sabones",
+        "fullName": "Sabones",
+        "number": 17,
+        "position": "Avançado",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "FC Luanda",
+    "teamId": "fcluanda",
+    "club": "FC Luanda",
+    "players": [
+      {
+        "id": "1T6AZN3",
+        "name": "JOAO MADUVO CAPITA CAFULA",
+        "fullName": "JOAO MADUVO CAPITA CAFULA",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L7LPH0",
+        "name": "DENILSON",
+        "fullName": "DENILSON",
+        "number": 10,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L7WK59",
+        "name": "LUDIAKUENO",
+        "fullName": "LUDIAKUENO",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MALL47",
+        "name": "DOMINGOS",
+        "fullName": "DOMINGOS",
+        "number": 14,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L08HY2",
+        "name": "DOMINGOS",
+        "fullName": "DOMINGOS",
+        "number": 25,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0RP19",
+        "name": "Estevao Cahoko",
+        "fullName": "Estevao Cahoko",
+        "number": 24,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L11132",
+        "name": "FRANCISCO",
+        "fullName": "FRANCISCO",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QHQN96",
+        "name": "Joel Diaku",
+        "fullName": "Joel Diaku",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M8XDU3",
+        "name": "Arnaldo Dielo",
+        "fullName": "Arnaldo Dielo",
+        "number": 16,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V0CA42",
+        "name": "BATISTA JÁO KACHAMA KACHAMA",
+        "fullName": "BATISTA JÁO KACHAMA KACHAMA",
+        "number": 27,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1T6B2Z2",
+        "name": "RUBEN CRISTIANO MBALA LUWAWA",
+        "fullName": "RUBEN CRISTIANO MBALA LUWAWA",
+        "number": 15,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2WTH5",
+        "name": "Filipe Malanda",
+        "fullName": "Filipe Malanda",
+        "number": 17,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJVMR0",
+        "name": "Jonilson José Manuel Manuel",
+        "fullName": "Jonilson José Manuel Manuel",
+        "number": 6,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QW3Z14",
+        "name": "Celio Nimi",
+        "fullName": "Celio Nimi",
+        "number": 26,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MALHF8",
+        "name": "KANO",
+        "fullName": "KANO",
+        "number": 31,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIWNQ8",
+        "name": "PEDRO",
+        "fullName": "PEDRO",
+        "number": 7,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QW9VB1",
+        "name": "JAIME",
+        "fullName": "JAIME",
+        "number": 30,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJUDK2",
+        "name": "Gelson Dos Santos André Gelson",
+        "fullName": "Gelson Dos Santos André Gelson",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L064E1",
+        "name": "MIGUEL NZAU MANUEL MATOS",
+        "fullName": "MIGUEL NZAU MANUEL MATOS",
+        "number": 23,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L7W9K9",
+        "name": "DEO",
+        "fullName": "DEO",
+        "number": 22,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MALDR2",
+        "name": "PEDRO",
+        "fullName": "PEDRO",
+        "number": 28,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MTNDT1",
+        "name": "Euclides Dos Santos",
+        "fullName": "Euclides Dos Santos",
+        "number": 5,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MALDZ0",
+        "name": "HAMILTON",
+        "fullName": "HAMILTON",
+        "number": 2,
+        "position": "Médio",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Libolo",
+    "teamId": "libolo",
+    "club": "Recreativo do Libolo",
+    "players": [
+      {
+        "id": "1K2X4C2",
+        "name": "Andre",
+        "fullName": "Andre",
+        "number": 10,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2IVX4",
+        "name": "ADELINO WIMA CALUNHI ANTONIO",
+        "fullName": "ADELINO WIMA CALUNHI ANTONIO",
+        "number": 5,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NGGGT5",
+        "name": "Zidan Bernardo António Francisco",
+        "fullName": "Zidan Bernardo António Francisco",
+        "number": 22,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SPT0X9",
+        "name": "JOSÉ",
+        "fullName": "JOSÉ",
+        "number": 19,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NVR114",
+        "name": "MARCOS",
+        "fullName": "MARCOS",
+        "number": 3,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSF5M3",
+        "name": "Zinadine Zidane Moises Catraio",
+        "fullName": "Zinadine Zidane Moises Catraio",
+        "number": 24,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXU6W1",
+        "name": "CARDOSO ERNESTO VIEIRA CHICAIANGO",
+        "fullName": "CARDOSO ERNESTO VIEIRA CHICAIANGO",
+        "number": 2,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1N6N208",
+        "name": "Edmilson Joao Francisco Cuxixima",
+        "fullName": "Edmilson Joao Francisco Cuxixima",
+        "number": 27,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1IAB9",
+        "name": "GERSON FRANCISCO CHIMBELE DA COSTA",
+        "fullName": "GERSON FRANCISCO CHIMBELE DA COSTA",
+        "number": 6,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K00SC7",
+        "name": "Manuel Jacinto Domingos",
+        "fullName": "Manuel Jacinto Domingos",
+        "number": 28,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIH843",
+        "name": "Bernardo Lomanda kamutcha Gunda",
+        "fullName": "Bernardo Lomanda kamutcha Gunda",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXNCS9",
+        "name": "João Mário Justino Jamba",
+        "fullName": "João Mário Justino Jamba",
+        "number": 20,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LAEC84",
+        "name": "Joel Kaluvala Alexandre Lucamba",
+        "fullName": "Joel Kaluvala Alexandre Lucamba",
+        "number": 30,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LDHZJ2",
+        "name": "ARISTOTES KINGUI MAKANI",
+        "fullName": "ARISTOTES KINGUI MAKANI",
+        "number": 4,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K26H69",
+        "name": "Manuel Manjolo",
+        "fullName": "Manuel Manjolo",
+        "number": 14,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UZYXC4",
+        "name": "PEDRO AFONSO MASSAKI",
+        "fullName": "PEDRO AFONSO MASSAKI",
+        "number": 17,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIY4I5",
+        "name": "JORGE",
+        "fullName": "JORGE",
+        "number": 15,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MJSXB9",
+        "name": "Salomão Mukanda",
+        "fullName": "Salomão Mukanda",
+        "number": 25,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PXU766",
+        "name": "Fernando José Paulino Lourenço",
+        "fullName": "Fernando José Paulino Lourenço",
+        "number": 16,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SPWXV4",
+        "name": "Vandelson Estevão Pedro João",
+        "fullName": "Vandelson Estevão Pedro João",
+        "number": 23,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2WLB8",
+        "name": "Ilidio da Silva",
+        "fullName": "Ilidio da Silva",
+        "number": 8,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QHQTD1",
+        "name": "AMADO TIAGO MARQUES HAIDARA",
+        "fullName": "AMADO TIAGO MARQUES HAIDARA",
+        "number": 18,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MR7M11",
+        "name": "DIOGO DA ROCHA QUIAMESSO",
+        "fullName": "DIOGO DA ROCHA QUIAMESSO",
+        "number": 11,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Recreativo da Caala",
+    "teamId": "caala",
+    "club": "CR Caála",
+    "players": [
+      {
+        "id": "1UY6AR6",
+        "name": "TIAGO JAMBA ADELINO",
+        "fullName": "TIAGO JAMBA ADELINO",
+        "number": 33,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZ4PI8",
+        "name": "BENVINDO MIGUEL ANDRÉ AFONSO",
+        "fullName": "BENVINDO MIGUEL ANDRÉ AFONSO",
+        "number": 4,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2IP48",
+        "name": "FELIX CASSULE ANDRE",
+        "fullName": "FELIX CASSULE ANDRE",
+        "number": 26,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LDA172",
+        "name": "Benedito Antunes",
+        "fullName": "Benedito Antunes",
+        "number": 19,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZJ8Y2",
+        "name": "FRANCISCO",
+        "fullName": "FRANCISCO",
+        "number": 16,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JS6NR7",
+        "name": "Cuxixima",
+        "fullName": "Domingos Lourenço Cuxixima",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0AG17",
+        "name": "JOSE AFONSO DOS SANTOS FERNANDO",
+        "fullName": "JOSE AFONSO DOS SANTOS FERNANDO",
+        "number": 30,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MXAHV0",
+        "name": "Domingos Braga Laurindo Fernando",
+        "fullName": "Domingos Braga Laurindo Fernando",
+        "number": 29,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZ4ES4",
+        "name": "Osvaldo",
+        "fullName": "Osvaldo",
+        "number": 6,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LB66S2",
+        "name": "ALBANO KUPENALA",
+        "fullName": "ALBANO KUPENALA",
+        "number": 3,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PPTR71",
+        "name": "ESTEVÂO LUSSENDJE",
+        "fullName": "ESTEVÂO LUSSENDJE",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZHZH1",
+        "name": "Gonçalves Zinho Manico",
+        "fullName": "Gonçalves Zinho Manico",
+        "number": 21,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K002P8",
+        "name": "Landu",
+        "fullName": "Landu",
+        "number": 22,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MUVV97",
+        "name": "Manuel Zange Miguel",
+        "fullName": "Manuel Zange Miguel",
+        "number": 20,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NJJKZ4",
+        "name": "LOURENÇO ANTÓNIO PEREIRA",
+        "fullName": "LOURENÇO ANTÓNIO PEREIRA",
+        "number": 31,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1R8LP51",
+        "name": "JOSÉ MANUEL RAUL",
+        "fullName": "JOSÉ MANUEL RAUL",
+        "number": 27,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1T647T5",
+        "name": "valentim sacuvale",
+        "fullName": "valentim sacuvale",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2QWK8",
+        "name": "Timoteo Sambissa",
+        "fullName": "Timoteo Sambissa",
+        "number": 24,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0R4W6",
+        "name": "VALENTE",
+        "fullName": "Hermenegildo Sandumbo",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXIKQ1",
+        "name": "SEQUESSEQUE",
+        "fullName": "ABEL SILAS SEQUESSEQUE",
+        "number": 25,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZKSC2",
+        "name": "LISNEU EMANUEL NETO SIMAO",
+        "fullName": "LISNEU EMANUEL NETO SIMAO",
+        "number": 23,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0REM6",
+        "name": "Claúdio Sozinho",
+        "fullName": "Claúdio Sozinho",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L96DJ1",
+        "name": "GABRIEL",
+        "fullName": "GABRIEL",
+        "number": 17,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSRQB0",
+        "name": "MARIANO DA COSTA VIDAL",
+        "fullName": "MARIANO DA COSTA VIDAL",
+        "number": 15,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWGZB2",
+        "name": "ARILSON DE CEITA PEREIRA JORGE",
+        "fullName": "ARILSON DE CEITA PEREIRA JORGE",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QVFE29",
+        "name": "ERNESTO",
+        "fullName": "ERNESTO",
+        "number": 34,
+        "position": "Avançado",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Interclube",
+    "teamId": "interclube",
+    "club": "GD Interclube",
+    "players": [
+      {
+        "id": "1MUAZF5",
+        "name": "ANDERSON ARIEU CALENGUE AFONSO",
+        "fullName": "ANDERSON ARIEU CALENGUE AFONSO",
+        "number": 17,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1KET3",
+        "name": "Bey",
+        "fullName": "Osvaldo Augusto Francisco",
+        "number": 27,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NI2DP9",
+        "name": "Afonso",
+        "fullName": "Afonso Baptista",
+        "number": 36,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1T9MIP7",
+        "name": "Toy",
+        "fullName": "DOMINGOS MIGUEL BRAVO",
+        "number": 26,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JTV4K9",
+        "name": "Salomão",
+        "fullName": "SALOMÃO",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRKQX3",
+        "name": "Sandro",
+        "fullName": "ALEXANDRE DOMINGOS NGUNZA CACULO",
+        "number": 37,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNY691",
+        "name": "Lionel João Barão Cambuta",
+        "fullName": "Lionel João Barão Cambuta",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UZ41E0",
+        "name": "Walter",
+        "fullName": "WALTER EMANUEL DE SÁ CARVALHO CARVALHO",
+        "number": 20,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWSSZ2",
+        "name": "PEDRO HONJO CHIMBIAMBINLU",
+        "fullName": "PEDRO HONJO CHIMBIAMBINLU",
+        "number": 10,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PW03I4",
+        "name": "OCTAVIO LEITE FERNANDES CRUZ",
+        "fullName": "OCTAVIO LEITE FERNANDES CRUZ",
+        "number": 21,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LZLZP0",
+        "name": "Moisés",
+        "fullName": "MOISÉS",
+        "number": 28,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K26VW6",
+        "name": "Caneta",
+        "fullName": "Pedro Ganga",
+        "number": 32,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M92D85",
+        "name": "Paulo Gaspar",
+        "fullName": "PAULO",
+        "number": 33,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MYP5Z8",
+        "name": "FREDY DA GRAÇA SEBASTIÃO LOPES",
+        "fullName": "FREDY DA GRAÇA SEBASTIÃO LOPES",
+        "number": 39,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NW4P04",
+        "name": "JONAS KAQUEIA LUCAS",
+        "fullName": "JONAS KAQUEIA LUCAS",
+        "number": 35,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JTV3G3",
+        "name": "Além",
+        "fullName": "ALBERTO",
+        "number": 6,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JTVF71",
+        "name": "Ru",
+        "fullName": "JORGE",
+        "number": 22,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QFXVU3",
+        "name": "Gaby",
+        "fullName": "PEDRO GABRIEL MALANDA MIGUEL",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZYK44",
+        "name": "Boiado",
+        "fullName": "SILVANO MONTEIRO",
+        "number": 30,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QFF753",
+        "name": "ANALTINO JOSÉ FERNANDO MUALIFANGUE",
+        "fullName": "ANALTINO JOSÉ FERNANDO MUALIFANGUE",
+        "number": 31,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZ4CQ5",
+        "name": "Alcides",
+        "fullName": "Alcides Patrício",
+        "number": 14,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZ6PV1",
+        "name": "Panzo",
+        "fullName": "GABRIEL SAMUEL PANZO",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M7HYZ3",
+        "name": "Altura",
+        "fullName": "Pascoal Paulino",
+        "number": 23,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JTUYS4",
+        "name": "Jamanta",
+        "fullName": "EDIVALDO",
+        "number": 18,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JSRQX5",
+        "name": "Nandinho",
+        "fullName": "FERNANDO JACINTO QUISSANGA",
+        "number": 25,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SCCIV4",
+        "name": "Bartolomeu Taivando Anacleto Sachimala",
+        "fullName": "Bartolomeu Taivando Anacleto Sachimala",
+        "number": 38,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0SA99",
+        "name": "Betinho",
+        "fullName": "FELISBERTO",
+        "number": 29,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": null,
+        "name": "Patrick Banza",
+        "fullName": "Patrick Banza",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Bravos do Maquis",
+    "teamId": "bravos",
+    "club": "Bravos do Maquis",
+    "players": [
+      {
+        "id": "1JS6L23",
+        "name": "Jeronimo Mendes Abrao",
+        "fullName": "Jeronimo Mendes Abrao",
+        "number": 6,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LD8AS7",
+        "name": "Agnaldo",
+        "fullName": "Agnaldo Emerson Catanga",
+        "number": 3,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K4MZ03",
+        "name": "OLIVEIRA ANTONIO",
+        "fullName": "OLIVEIRA ANTONIO",
+        "number": 27,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZ4L62",
+        "name": "MANUEL POMBOLO ANTÓNIO",
+        "fullName": "MANUEL POMBOLO ANTÓNIO",
+        "number": 22,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZT7S4",
+        "name": "LUÍS CAETANO PAQUETE",
+        "fullName": "LUÍS CAETANO PAQUETE",
+        "number": 23,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXIA30",
+        "name": "Caprego",
+        "fullName": "FILIPE PREGO CANDUMBO",
+        "number": 24,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JTV8J9",
+        "name": "JORGE CORREIA",
+        "fullName": "JORGE CORREIA",
+        "number": 19,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K08PH7",
+        "name": "Higino Epalanga",
+        "fullName": "Higino Epalanga",
+        "number": 10,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2WKF7",
+        "name": "Joffre Faztudo",
+        "fullName": "Joffre Faztudo",
+        "number": 20,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KADLE6",
+        "name": "LUÍS VENÂNCIO FELICIANO DIREITO",
+        "fullName": "LUÍS VENÂNCIO FELICIANO DIREITO",
+        "number": 14,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M8Y3D4",
+        "name": "Edmilson Paulo Generoso",
+        "fullName": "Edmilson Paulo Generoso",
+        "number": 29,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1TS02",
+        "name": "Luis Gonçalves",
+        "fullName": "Luis Gonçalves",
+        "number": 26,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PZX2",
+        "name": "Eric Manuel Gouveia Cabral",
+        "fullName": "Eric Manuel Gouveia Cabral",
+        "number": 8,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M9KIM9",
+        "name": "Yubanis Joao",
+        "fullName": "Yubanis Joao",
+        "number": 31,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRTYH2",
+        "name": "SANTOS NKIAMBI KIAKU",
+        "fullName": "SANTOS NKIAMBI KIAKU",
+        "number": 32,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZZSE2",
+        "name": "Lionardo",
+        "fullName": "Belito Batalha Messias",
+        "number": 12,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M8XZV0",
+        "name": "Eduwine Alfredo Dos Vantrier",
+        "fullName": "Eduwine Alfredo Dos Vantrier",
+        "number": 17,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MQV606",
+        "name": "Muhongo",
+        "fullName": "Andre Dinis",
+        "number": 21,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MRRVA5",
+        "name": "GELSON",
+        "fullName": "ATAÍDE BULE NEVES",
+        "number": 9,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRKRJ7",
+        "name": "DANILSON JOSÉ PEDRO ALBERTO",
+        "fullName": "DANILSON JOSÉ PEDRO ALBERTO",
+        "number": 2,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PZDU59",
+        "name": "MIGUEL JOSÉ SEBASTIÃO",
+        "fullName": "MIGUEL JOSÉ SEBASTIÃO",
+        "number": 7,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MC6W52",
+        "name": "GASTÃO TANGU",
+        "fullName": "GASTÃO TANGU",
+        "number": 28,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MRRS47",
+        "name": "CHUKWUMELA BRIGHT OSAH",
+        "fullName": "CHUKWUMELA BRIGHT OSAH",
+        "number": 16,
+        "position": "Por confirmar",
+        "nationality": "Nigeria"
+      },
+      {
+        "id": "1MQUVZ2",
+        "name": "Fota",
+        "fullName": "Tiago Uzana",
+        "number": 15,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V0F2V0",
+        "name": "ANTONIO JOSE",
+        "fullName": "ANTONIO JOSE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0RPZ2",
+        "name": "BRUNO TRINDADE",
+        "fullName": "BRUNO TRINDADE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Sagrada Esperança",
+    "teamId": "sagrada",
+    "club": "Sagrada Esperança",
+    "players": [
+      {
+        "id": "1M6AMJ6",
+        "name": "Charles Abel",
+        "fullName": "Charles Abel",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PKA0N3",
+        "name": "HAHILO SAPALO ALBERTO",
+        "fullName": "HAHILO SAPALO ALBERTO",
+        "number": 32,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L7VM13",
+        "name": "CLAUDIO BARBOSA",
+        "fullName": "CLAUDIO BARBOSA",
+        "number": 33,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1TD23W7",
+        "name": "MIGUEL ANSELMO BASILIO DANIEL",
+        "fullName": "MIGUEL ANSELMO BASILIO DANIEL",
+        "number": 5,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRJ1Y6",
+        "name": "CABUÇO",
+        "fullName": "GUILHERME FRANCISCO SAIENDO",
+        "number": 8,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRKMF2",
+        "name": "FELISBERTO AUGUSTO CALUMBULA",
+        "fullName": "FELISBERTO AUGUSTO CALUMBULA",
+        "number": 35,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PKA0K6",
+        "name": "CARLOS NEVES CAMOXI",
+        "fullName": "CARLOS NEVES CAMOXI",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PKA0G6",
+        "name": "CAPANDA",
+        "fullName": "HENRIQUES AMERICO HENDA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1URVKN2",
+        "name": "ALFINO GOMES CHIDI PINTO",
+        "fullName": "ALFINO GOMES CHIDI PINTO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1USLHA9",
+        "name": "FERNANDO",
+        "fullName": "ANTÓNIO SOZINHO CHORA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRXXR0",
+        "name": "Dala",
+        "fullName": "Melone Moundo",
+        "number": 11,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1URL4K5",
+        "name": "DE DEUS",
+        "fullName": "DADINHO INOCÊNCIO AUGUSTO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L3L5Q7",
+        "name": "Dodão",
+        "fullName": "Adilson Miguel Sebastião",
+        "number": 19,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1TTP0",
+        "name": "Bartolomeu Domingos",
+        "fullName": "Bartolomeu Domingos",
+        "number": 14,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJUG83",
+        "name": "Silvano Mauro Dos Santos",
+        "fullName": "Silvano Mauro Dos Santos",
+        "number": 18,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SPU5F2",
+        "name": "SIMÃO",
+        "fullName": "NSESANI EMANUEL",
+        "number": 12,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UNK8M4",
+        "name": "ESCALÃO DE FORMAÇÃO",
+        "fullName": "NZUNZI GARCIA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1URVIY3",
+        "name": "CONGOLO",
+        "fullName": "ADILSON NDAMBO FATIMA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1URVJV7",
+        "name": "FAUSTINO",
+        "fullName": "JÚLIO CAPALO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MBH2K9",
+        "name": "ANTÓNIO",
+        "fullName": "OSVALDO SANTOS FLORINDA",
+        "number": 36,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1U3Y8",
+        "name": "FRANCISCO LUCUSSA",
+        "fullName": "JORGE TXANDO",
+        "number": 9,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQB0P5",
+        "name": "GARCIAS",
+        "fullName": "NZUZI PANZO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQ15W5",
+        "name": "GUERRA",
+        "fullName": "ELISIO SARAFIM",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MAFU72",
+        "name": "MUACHEFO",
+        "fullName": "MARCOS FRANCISCO JOÃO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SCB285",
+        "name": "JOÃO MUBANGA",
+        "fullName": "NGOI KATABU",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MA5QH8",
+        "name": "PINTO",
+        "fullName": "ADILSON MÁRIO JORGE",
+        "number": 15,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SD9KJ0",
+        "name": "MAITONYI",
+        "fullName": "FERNANDO CAHILO JOSÉ",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQB020",
+        "name": "Junior Neves",
+        "fullName": "Francisco Neves",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRV034",
+        "name": "DOMINGOS JOSÉ KANDUMBA",
+        "fullName": "DOMINGOS JOSÉ KANDUMBA",
+        "number": 34,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PKA0D1",
+        "name": "KAPUITA",
+        "fullName": "ZACARIAS MUZAULA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JJFMV6",
+        "name": "EVARISTO KAPUNGE",
+        "fullName": "EVARISTO KAPUNGE",
+        "number": 4,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SD9KL1",
+        "name": "LAURINDA MBUMBUM",
+        "fullName": "PALANGA TXITEMBO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L7LPP2",
+        "name": "ADOLFO LOUA",
+        "fullName": "ADOLFO LOUA",
+        "number": 30,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UNK8K8",
+        "name": "SAMUEL LUKENGANI",
+        "fullName": "SAMUEL LUKENGANI",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1SFB7",
+        "name": "AFONSO MARQUES",
+        "fullName": "AFONSO MARQUES",
+        "number": 24,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M8XGW3",
+        "name": "MAURÍCIO ANDRÉ",
+        "fullName": "SAPALO CAIPUZO",
+        "number": 31,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRBDZ5",
+        "name": "MIRANDA",
+        "fullName": "SIMONE EDUARDO ASSA",
+        "number": 10,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MAFV58",
+        "name": "TXIGICA MUANDANGE",
+        "fullName": "TXIGICA MUANDANGE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PFQ2",
+        "name": "Muanha",
+        "fullName": "Joao Ngunza",
+        "number": 17,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MAFUD3",
+        "name": "MUATANGUI",
+        "fullName": "ADILSON CAXALA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRC5Q9",
+        "name": "LEONARDO ARMANDO MUTUNDA",
+        "fullName": "LEONARDO ARMANDO MUTUNDA",
+        "number": 13,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQ17Q5",
+        "name": "PAULO ALBANO NETO",
+        "fullName": "PAULO ALBANO NETO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2WT15",
+        "name": "Barreira Paulo",
+        "fullName": "Barreira Paulo",
+        "number": 28,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0S9H7",
+        "name": "Filipe Pimpao",
+        "fullName": "Filipe Pimpao",
+        "number": 16,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SCB257",
+        "name": "RONALDO",
+        "fullName": "CHIMUNA UPITE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9H51",
+        "name": "SANDRA GONZAGAS",
+        "fullName": "BRIGUE DOMINGOS",
+        "number": 29,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZZSV7",
+        "name": "Sebastiao",
+        "fullName": "Felisberto Dala",
+        "number": 7,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UQ1LN1",
+        "name": "SUPULA MUNTO",
+        "fullName": "ADÃO MULUMBA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRBVH5",
+        "name": "TATI",
+        "fullName": "LUIS BUMBA",
+        "number": 20,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1USANV3",
+        "name": "VIEIGAS SIMÃO",
+        "fullName": "MARIA FILIPE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2VZ98",
+        "name": "MANUEL VUNGE",
+        "fullName": "MANUEL VUNGE",
+        "number": 3,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V1A1U9",
+        "name": "ALEXANDRE ABEL FERNANDO",
+        "fullName": "ALEXANDRE ABEL FERNANDO",
+        "number": 2,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1V0Z7L2",
+        "name": "NEVES",
+        "fullName": "MESSIAS PIRES",
+        "number": 21,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "CD Lunda Sul",
+    "teamId": "lundasul",
+    "club": "Desportivo da Lunda Sul",
+    "players": [
+      {
+        "id": "1UWN5D8",
+        "name": "AFONSO",
+        "fullName": "ANTÓNIO EZEQUIEL MUSSAZENO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K3IYT0",
+        "name": "João Ambrosio",
+        "fullName": "João Ambrosio",
+        "number": 28,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNQ0B4",
+        "name": "Manuel António",
+        "fullName": "Manuel António",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN4Y7",
+        "name": "Baptista",
+        "fullName": "Gustavo Bartolomeu Upuó",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PPR5S9",
+        "name": "Trindade Baptista",
+        "fullName": "Trindade Baptista",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN4J7",
+        "name": "Bernardo",
+        "fullName": "Reclénio Paulo Alberto",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MZSFE5",
+        "name": "MONGA DIÉ",
+        "fullName": "AFONSO MANUEL BINGA",
+        "number": 23,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZTHB4",
+        "name": "Zau",
+        "fullName": "Joao Bivoba",
+        "number": 35,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MPTGZ2",
+        "name": "Isaac BOMASHI",
+        "fullName": "Isaac BOMASHI",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MBIUP4",
+        "name": "José Bondoso",
+        "fullName": "José Bondoso",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZ48I2",
+        "name": "CACHINDELE",
+        "fullName": "MANUEL TCHINHANGUITA",
+        "number": 19,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AT7",
+        "name": "JOAO CAEBO",
+        "fullName": "JOAO CAEBO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KF4FA8",
+        "name": "caluvili",
+        "fullName": "joão Silvano",
+        "number": 33,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MBIUU0",
+        "name": "Sergio CAPENDA",
+        "fullName": "Sergio CAPENDA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0RA31",
+        "name": "João Baptista Cassicote",
+        "fullName": "João Baptista Cassicote",
+        "number": 27,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5Y1",
+        "name": "CASSINDA",
+        "fullName": "RAIMUNDO EPALANGA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9A08",
+        "name": "JOAO CATORZE",
+        "fullName": "JOAO CATORZE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC99X3",
+        "name": "AJAIR CAZENGA",
+        "fullName": "AJAIR CAZENGA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AR5",
+        "name": "AIRES CHICUNJI",
+        "fullName": "AIRES CHICUNJI",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AQ4",
+        "name": "ALVES CHICUNJI",
+        "fullName": "ALVES CHICUNJI",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN4V0",
+        "name": "Chitazo",
+        "fullName": "Custódio Txifita",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN6S6",
+        "name": "BAIÃO DA SILVA",
+        "fullName": "ANSELMO CAETANO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN539",
+        "name": "Da Silva",
+        "fullName": "Mauro Zeferino",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5G7",
+        "name": "FIGUEIRA DALA",
+        "fullName": "JARELSON ARICLENES",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0S9K6",
+        "name": "BICHO",
+        "fullName": "Ervinecio Daniel",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC99S4",
+        "name": "CLAÚDIO DANIEL",
+        "fullName": "CLAÚDIO DANIEL",
+        "number": 37,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9TV6",
+        "name": "MANUEL DANIEL",
+        "fullName": "MANUEL DANIEL",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MAF7V8",
+        "name": "Tomás Dias",
+        "fullName": "Tomás Dias",
+        "number": 41,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9UG9",
+        "name": "JORGE DOS SANTOS",
+        "fullName": "JORGE DOS SANTOS",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9A19",
+        "name": "MUCUTA ELIAS",
+        "fullName": "MUCUTA ELIAS",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5B4",
+        "name": "Jorge Feliciano",
+        "fullName": "André Sumano",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SCSXH4",
+        "name": "AMORIM FILIPE",
+        "fullName": "AMORIM FILIPE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZJRG6",
+        "name": "FELIX HONJO",
+        "fullName": "FELIX HONJO",
+        "number": 11,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5L8",
+        "name": "DULCE HOSSI",
+        "fullName": "GRAÇA MUCUASSENO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN4N4",
+        "name": "Justa Inhingui",
+        "fullName": "João Reis",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWNDB3",
+        "name": "CHÉCHA ITULIQUENO",
+        "fullName": "CARLOS SONHI",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN699",
+        "name": "JAMBA",
+        "fullName": "UPITE VICANO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPPK2",
+        "name": "João Joaquim",
+        "fullName": "João Joaquim",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9A97",
+        "name": "Jovial Justino",
+        "fullName": "Jovial Justino",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZMGD3",
+        "name": "KETA",
+        "fullName": "MARIO BERNARDO",
+        "number": 26,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5R0",
+        "name": "LEONARDO",
+        "fullName": "CANDA IVONE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPX79",
+        "name": "Veríssimo Loloji",
+        "fullName": "Veríssimo Loloji",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M7I902",
+        "name": "Tchilihi Luamba",
+        "fullName": "Jairo de Sousa",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPPD7",
+        "name": "Amilton Luifi",
+        "fullName": "Amilton Luifi",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AG6",
+        "name": "JANUÁRIO MANUEL",
+        "fullName": "JANUÁRIO MANUEL",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZJI14",
+        "name": "OSVALDO MIGUEL",
+        "fullName": "OSVALDO MIGUEL",
+        "number": 8,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AK6",
+        "name": "WAMANA MOÇAMBIQUE",
+        "fullName": "WAMANA MOÇAMBIQUE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AP0",
+        "name": "Zango Muachissengue",
+        "fullName": "Zango Muachissengue",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPP32",
+        "name": "Vidal Muachissengue",
+        "fullName": "Vidal Muachissengue",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPZN4",
+        "name": "Felix Mukenie",
+        "fullName": "Felix Mukenie",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0SAB2",
+        "name": "NIONGONONA MULIQUITA",
+        "fullName": "NIONGONONA MULIQUITA",
+        "number": 2,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC99N0",
+        "name": "MANOWA MULONGA",
+        "fullName": "MANOWA MULONGA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC9AJ0",
+        "name": "HENRIQUES MUTAMBULENO",
+        "fullName": "HENRIQUES MUTAMBULENO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JWT8S6",
+        "name": "NGULU",
+        "fullName": "ANTONIO NGOLA",
+        "number": 17,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JXIAL6",
+        "name": "PAULINO",
+        "fullName": "ELINDO WANGA",
+        "number": 6,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MAF102",
+        "name": "Atavares Pinto",
+        "fullName": "Atavares Pinto",
+        "number": 34,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC99Z6",
+        "name": "ANSELMO RAIMUNDO",
+        "fullName": "ANSELMO RAIMUNDO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0S908",
+        "name": "INOCENCIO RUI",
+        "fullName": "INOCENCIO RUI",
+        "number": 7,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPP86",
+        "name": "João Sacaputo",
+        "fullName": "João Sacaputo",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN6K0",
+        "name": "AFONSO SAMAIUQUE",
+        "fullName": "AMILCAR LUCAS",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWNDE5",
+        "name": "MUAFUNGA SAMALACA",
+        "fullName": "IVANO DE OLIVEIRA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNPPF9",
+        "name": "Eliseu Samuzeca",
+        "fullName": "Eliseu Samuzeca",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SC99Y8",
+        "name": "ADMIRO SANJAMBA",
+        "fullName": "ADMIRO SANJAMBA",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5X8",
+        "name": "CAMUOIO SANTOMEIA",
+        "fullName": "BENVINDO IAMUNO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5T3",
+        "name": "DA CRUZ AUGUSTO SECRETÁRIO",
+        "fullName": "LUITXI JORGE",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0RDY8",
+        "name": "Joao Tchiginga",
+        "fullName": "Joao Tchiginga",
+        "number": 4,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN6F7",
+        "name": "TITO",
+        "fullName": "TÁRCIO CRISTIANO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN6N7",
+        "name": "AFONSO TXICATA",
+        "fullName": "BRÁULIO MICHEL",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN4S5",
+        "name": "Upale Txitoma",
+        "fullName": "Horácio do Rosário",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PC87",
+        "name": "Sicuba Vunge",
+        "fullName": "Maranata Domingos",
+        "number": 10,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MBIWP2",
+        "name": "António Vungo",
+        "fullName": "António Vungo",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K0S970",
+        "name": "ADALBERTO WACAMBA",
+        "fullName": "ADALBERTO WACAMBA",
+        "number": 12,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UWN5V2",
+        "name": "NDONGALA XILI",
+        "fullName": "MANUEL AFONSO",
+        "number": null,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1L963X5",
+        "name": "Domingos Ximba",
+        "fullName": "Domingos Ximba",
+        "number": 16,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PH45",
+        "name": "David",
+        "fullName": "Dieu Maquissossila",
+        "number": 25,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PGL3",
+        "name": "Singongo",
+        "fullName": "Frederico Xangongo",
+        "number": 5,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZIZU3",
+        "name": "JOAQUIM TEIXEIRA",
+        "fullName": "JOAQUIM TEIXEIRA",
+        "number": 20,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2WAI2",
+        "name": "AGOSTINHO",
+        "fullName": "PEDRO DOMINGOS",
+        "number": 30,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1K2V2",
+        "name": "Nguala",
+        "fullName": "Hanilton Cassueca",
+        "number": 3,
+        "position": "Por confirmar",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "São Salvador",
+    "teamId": "saosalvador",
+    "club": "São Salvador",
+    "players": [
+      {
+        "id": "1T64MH7",
+        "name": "JOÃO ADRIANO",
+        "fullName": "JOÃO ADRIANO",
+        "number": 3,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PX5ZQ4",
+        "name": "PACHECO GUILHERME FRANCISCO ALFREDO",
+        "fullName": "PACHECO GUILHERME FRANCISCO ALFREDO",
+        "number": 15,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJVYF9",
+        "name": "MANUEL VIEIRA ALMEIDA",
+        "fullName": "MANUEL VIEIRA ALMEIDA",
+        "number": 16,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNY3G2",
+        "name": "AFONSO LUKOMBO ANTONIO",
+        "fullName": "AFONSO LUKOMBO ANTONIO",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MUBKP5",
+        "name": "Matondo Kuanzambi Jose Bengi",
+        "fullName": "Matondo Kuanzambi Jose Bengi",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PDB8",
+        "name": "Samuel Chissapa Cachimbombo",
+        "fullName": "Samuel Chissapa Cachimbombo",
+        "number": 21,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K12NM6",
+        "name": "JUSTINO TCHITEPA CÉSAR",
+        "fullName": "JUSTINO TCHITEPA CÉSAR",
+        "number": 27,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZIRZ7",
+        "name": "MANUEL DE MATOS",
+        "fullName": "MANUEL DE MATOS",
+        "number": 4,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1SEV5",
+        "name": "BATOMENE DE SOUSA",
+        "fullName": "BATOMENE DE SOUSA",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIH9V9",
+        "name": "FECA",
+        "fullName": "AUGUSTO FECAYAMALE",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIH506",
+        "name": "BIJO",
+        "fullName": "Fernando Lizandro Firmino Camuege Fernando",
+        "number": 6,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NG0F78",
+        "name": "Lando Simao Filipe",
+        "fullName": "Lando Simao Filipe",
+        "number": 14,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIWQF9",
+        "name": "ARTUR FIRMINO",
+        "fullName": "ARTUR FIRMINO",
+        "number": 34,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1KZ4H82",
+        "name": "José Garcia",
+        "fullName": "José Garcia",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SWD8D7",
+        "name": "CAETANO GOMES",
+        "fullName": "CAETANO GOMES",
+        "number": 30,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJW6R1",
+        "name": "JOÃO KUANZAMBI LUKOMBO JUNIOR",
+        "fullName": "JOÃO KUANZAMBI LUKOMBO JUNIOR",
+        "number": 32,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJWBM7",
+        "name": "ANTÓNIO JOSÉ XAVIEI JUNIOR",
+        "fullName": "ANTÓNIO JOSÉ XAVIEI JUNIOR",
+        "number": 11,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRUTW6",
+        "name": "ARICLENES CARLOS LOPES ANTÓNIO",
+        "fullName": "ARICLENES CARLOS LOPES ANTÓNIO",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIH3R9",
+        "name": "LUQUINHAS",
+        "fullName": "Lucas Filemon Cassule Lucas",
+        "number": 17,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JTV5A6",
+        "name": "FRANCISCO MANGALA",
+        "fullName": "FRANCISCO MANGALA",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K29464",
+        "name": "António Joaquim Mateus",
+        "fullName": "António Joaquim Mateus",
+        "number": 31,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1SM82",
+        "name": "EDUARDO MOYO",
+        "fullName": "EDUARDO MOYO",
+        "number": 22,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2WUE9",
+        "name": "Pedro Moyo",
+        "fullName": "Pedro Moyo",
+        "number": 35,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QPT743",
+        "name": "Felix Gonga Muondo",
+        "fullName": "Felix Gonga Muondo",
+        "number": 19,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJZ672",
+        "name": "PAULO AMADEU PANDA",
+        "fullName": "PAULO AMADEU PANDA",
+        "number": 18,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1NIZQE4",
+        "name": "JONAS RODRIGUES",
+        "fullName": "JONAS RODRIGUES",
+        "number": 23,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJ6Z32",
+        "name": "LUTONDA JOÃO SEBASTIÃO",
+        "fullName": "LUTONDA JOÃO SEBASTIÃO",
+        "number": 33,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SR5RK8",
+        "name": "WILSON GONÇALVES TENETE",
+        "fullName": "WILSON GONÇALVES TENETE",
+        "number": 25,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIH5K4",
+        "name": "Ramilton",
+        "fullName": "Rafael Sete Ucuahamba Ucuahamba",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K39MY6",
+        "name": "JOÃO ANDRÉ VEMBA",
+        "fullName": "JOÃO ANDRÉ VEMBA",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJVXK1",
+        "name": "NGINAKANDA ANTÓNIO VICENTE",
+        "fullName": "NGINAKANDA ANTÓNIO VICENTE",
+        "number": 20,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1THB252",
+        "name": "CONSTANTINO JOSÉ DOMINGOS",
+        "fullName": "CONSTANTINO JOSÉ DOMINGOS",
+        "number": 28,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SD3TM3",
+        "name": "RIVALDO SANTOS PACHECO",
+        "fullName": "RIVALDO SANTOS PACHECO",
+        "number": 29,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2PYW6",
+        "name": "Anderson de Jesus Luís Mputa",
+        "fullName": "Anderson de Jesus Luís Mputa",
+        "number": 26,
+        "position": "Avançado",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "Petro de Luanda",
+    "teamId": "petro",
+    "club": "Petro de Luanda",
+    "players": [
+      {
+        "id": "1K00C14",
+        "name": "Ruben Constantino Adérito",
+        "fullName": "Ruben Constantino Adérito",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M7J6S8",
+        "name": "JAIRO ANTÓNIO BENTO MUANHA",
+        "fullName": "JAIRO ANTÓNIO BENTO MUANHA",
+        "number": 34,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1M7J786",
+        "name": "ILÍDIO AUGUSTO BUNGA PANDA",
+        "fullName": "ILÍDIO AUGUSTO BUNGA PANDA",
+        "number": 33,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LILKA2",
+        "name": "DOMINGOS DA SILVA",
+        "fullName": "DOMINGOS DA SILVA",
+        "number": 38,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1TDZZ59",
+        "name": "LOURENÇO JOSÉ DIDISSA",
+        "fullName": "LOURENÇO JOSÉ DIDISSA",
+        "number": 31,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1SG1LJ5",
+        "name": "TIAGO RODRIGUES DOS REIS",
+        "fullName": "TIAGO RODRIGUES DOS REIS",
+        "number": 23,
+        "position": "Avançado",
+        "nationality": "Brazil"
+      },
+      {
+        "id": "1QSE2M8",
+        "name": "GABRIEL HEITOR FERNANDES DA SILVA",
+        "fullName": "GABRIEL HEITOR FERNANDES DA SILVA",
+        "number": 39,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "161UX74",
+        "name": "JORGE JAVIER MOREIRA PEREIRA",
+        "fullName": "JORGE JAVIER MOREIRA PEREIRA",
+        "number": 20,
+        "position": "Médio",
+        "nationality": "Venezuela"
+      },
+      {
+        "id": "1MAV9X0",
+        "name": "JONATHAN JOSUE RUBIO TORO",
+        "fullName": "JONATHAN JOSUE RUBIO TORO",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Honduras"
+      },
+      {
+        "id": "1UXPX68",
+        "name": "IVAN RICARDO NEVES ABREU CAVALEIRO",
+        "fullName": "IVAN RICARDO NEVES ABREU CAVALEIRO",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXR9B1",
+        "name": "MÁRIO CÉSAR AZEVEDO ALVES BALBÚRDIA",
+        "fullName": "MÁRIO CÉSAR AZEVEDO ALVES BALBÚRDIA",
+        "number": 6,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXPUT6",
+        "name": "LEONARDO DA COSTA BOLGADO",
+        "fullName": "LEONARDO DA COSTA BOLGADO",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Brazil"
+      },
+      {
+        "id": "1K00RB8",
+        "name": "Agostinho José Júlio Calunga",
+        "fullName": "Agostinho José Júlio Calunga",
+        "number": 30,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JS6PZ2",
+        "name": "Adilson Cipriano da Cruz",
+        "fullName": "Adilson Cipriano da Cruz",
+        "number": 22,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRU3Z0",
+        "name": "JOAQUIM MARCOS CUNGA BALANGA",
+        "fullName": "JOAQUIM MARCOS CUNGA BALANGA",
+        "number": 24,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "161X604",
+        "name": "BERNARDO SILVA DA CONCEIÇÃO",
+        "fullName": "BERNARDO SILVA DA CONCEIÇÃO",
+        "number": 13,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "163UUQ3",
+        "name": "HÉLDER WANDER SOUSA DE AZEVEDO COSTA",
+        "fullName": "HÉLDER WANDER SOUSA DE AZEVEDO COSTA",
+        "number": 11,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXEGR7",
+        "name": "LUCAS EDUARDO DOS SANTOS JOÃO",
+        "fullName": "LUCAS EDUARDO DOS SANTOS JOÃO",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXPV54",
+        "name": "DEYBI ALDAIR FLORES FLORES",
+        "fullName": "DEYBI ALDAIR FLORES FLORES",
+        "number": 12,
+        "position": "Médio",
+        "nationality": "Honduras"
+      },
+      {
+        "id": "1JRRJV7",
+        "name": "HUGO MIGUEL BARRETO HENRIQUES MARQUES",
+        "fullName": "HUGO MIGUEL BARRETO HENRIQUES MARQUES",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JS6M71",
+        "name": "Antonio da Silva Chitanga Hossi",
+        "fullName": "Antonio da Silva Chitanga Hossi",
+        "number": 27,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRT100",
+        "name": "TIAGO LIMA LEAL",
+        "fullName": "TIAGO LIMA LEAL",
+        "number": 26,
+        "position": "Avançado",
+        "nationality": "Brazil"
+      },
+      {
+        "id": "1JSP4X7",
+        "name": "LAURINDO DILSON MARIA AURÉLIO",
+        "fullName": "LAURINDO DILSON MARIA AURÉLIO",
+        "number": 29,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1UXEFI2",
+        "name": "NURIO DOMINGOS MATIAS FORTUNA",
+        "fullName": "NURIO DOMINGOS MATIAS FORTUNA",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JRTZ46",
+        "name": "EDDIE MARCOS MELO AFONSO",
+        "fullName": "EDDIE MARCOS MELO AFONSO",
+        "number": 25,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K29HA9",
+        "name": "VICTOR PEDRO NANQUE",
+        "fullName": "VICTOR PEDRO NANQUE",
+        "number": 18,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "161U564",
+        "name": "PEDRO MIGUEL SANTOS APARÍCIO",
+        "fullName": "PEDRO MIGUEL SANTOS APARÍCIO",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Portugal"
+      },
+      {
+        "id": "1MC76I4",
+        "name": "VANILSON TITA ZÉU",
+        "fullName": "VANILSON TITA ZÉU",
+        "number": 17,
+        "position": "Médio",
+        "nationality": "Angola"
+      }
+    ]
+  },
+  {
+    "sourceName": "FC Cabinda",
+    "teamId": "cabinda",
+    "club": "FC Cabinda",
+    "players": [
+      {
+        "id": "1K1LE69",
+        "name": "Ariclenis Afonso Araújo Lede",
+        "fullName": "Ariclenis Afonso Araújo Lede",
+        "number": 29,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1TC8VR0",
+        "name": "CORNELIO QUEBA LELO BAPTISTA",
+        "fullName": "CORNELIO QUEBA LELO BAPTISTA",
+        "number": 15,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LIXFQ6",
+        "name": "FERNANDO MATOMBE BAZONGA",
+        "fullName": "FERNANDO MATOMBE BAZONGA",
+        "number": 21,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LK64F5",
+        "name": "MARIO ANTONIO BUMBA",
+        "fullName": "MARIO ANTONIO BUMBA",
+        "number": 6,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LK64T5",
+        "name": "FRANCISCO DOMINGAS CHICAPA",
+        "fullName": "FRANCISCO DOMINGAS CHICAPA",
+        "number": 12,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K2Q5N7",
+        "name": "Costa Miguel Domingos Titi",
+        "fullName": "Costa Miguel Domingos Titi",
+        "number": 7,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MBGNX6",
+        "name": "Marcos Lando",
+        "fullName": "Marcos Lando",
+        "number": 5,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1JPC1",
+        "name": "Cristiano Malonda",
+        "fullName": "Cristiano Malonda",
+        "number": 8,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LK64M0",
+        "name": "JAIME DA GRACA MALONDA BUANGE",
+        "fullName": "JAIME DA GRACA MALONDA BUANGE",
+        "number": 26,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MKPPY5",
+        "name": "Gedeon Macosso Mananga",
+        "fullName": "Gedeon Macosso Mananga",
+        "number": 3,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1K9H8",
+        "name": "Júlio Mavungo André",
+        "fullName": "Júlio Mavungo André",
+        "number": 17,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MQUWG3",
+        "name": "António Makiobo Mbungo",
+        "fullName": "António Makiobo Mbungo",
+        "number": 16,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JM8ES9",
+        "name": "FREDERICO ZAU",
+        "fullName": "FREDERICO ZAU",
+        "number": 20,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1L9F6",
+        "name": "Rodrigo dos Santos Ngimbi",
+        "fullName": "Rodrigo dos Santos Ngimbi",
+        "number": 2,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QF3QJ8",
+        "name": "ARSENIO MUANDA",
+        "fullName": "ARSENIO MUANDA",
+        "number": 31,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1K1KPX7",
+        "name": "Jose Pitra Ieze Manteiga",
+        "fullName": "Jose Pitra Ieze Manteiga",
+        "number": 18,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1TCTJI1",
+        "name": "JOSÉ ESPANHOL CARDOSO BRÁS",
+        "fullName": "JOSÉ ESPANHOL CARDOSO BRÁS",
+        "number": 23,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1PNMR23",
+        "name": "Luís Liberal Lemos Casimiro Casimiro",
+        "fullName": "Luís Liberal Lemos Casimiro Casimiro",
+        "number": 27,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1N84LF1",
+        "name": "João Cambo",
+        "fullName": "João Cambo",
+        "number": 25,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1THXAC4",
+        "name": "Rodilson sumbo Da Costa",
+        "fullName": "Rodilson sumbo Da Costa",
+        "number": 10,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QFQTT4",
+        "name": "Pedro da Silva Da Silva",
+        "fullName": "Pedro da Silva Da Silva",
+        "number": 30,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1JZI8E0",
+        "name": "JOÃO EDUARDO",
+        "fullName": "JOÃO EDUARDO",
+        "number": 1,
+        "position": "Guarda-redes",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QHWAA4",
+        "name": "Simão Gomes",
+        "fullName": "Simão Gomes",
+        "number": 14,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJWC86",
+        "name": "António Kapata",
+        "fullName": "António Kapata",
+        "number": 9,
+        "position": "Avançado",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1QTZY92",
+        "name": "Francisco Luemba",
+        "fullName": "Francisco Luemba",
+        "number": 4,
+        "position": "Defesa",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJJYH4",
+        "name": "Mário Chiwale Caluaco da Silva Mário",
+        "fullName": "Mário Chiwale Caluaco da Silva Mário",
+        "number": 24,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1MA5QN6",
+        "name": "DOMINGOS PAIXÃO PAULINO LOURENÇO",
+        "fullName": "DOMINGOS PAIXÃO PAULINO LOURENÇO",
+        "number": 19,
+        "position": "Médio",
+        "nationality": "Angola"
+      },
+      {
+        "id": "1LJVYM8",
+        "name": "LUYEYE TOMÁS TOMÁS",
+        "fullName": "LUYEYE TOMÁS TOMÁS",
+        "number": 13,
+        "position": "Médio",
+        "nationality": "Angola"
+      }
+    ]
+  }
+]

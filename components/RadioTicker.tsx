@@ -1,86 +1,55 @@
-import { programs, defaultProgram } from "@/data/programs";
 
+"use client";
 
-function getCurrentProgram() {
+import { useEffect, useState } from "react";
+import { defaultProgram } from "@/data/programs";
 
-  const now = new Date();
-
-  const currentTime =
-    now.getHours() * 60 + now.getMinutes();
-
-
-  const activeProgram = programs.find((program) => {
-
-    const [startHour, startMinute] =
-      program.start.split(":").map(Number);
-
-    const [endHour, endMinute] =
-      program.end.split(":").map(Number);
-
-
-    const start =
-      startHour * 60 + startMinute;
-
-    const end =
-      endHour * 60 + endMinute;
-
-
-    return currentTime >= start && currentTime <= end;
-
-  });
-
-
-  return activeProgram || defaultProgram;
-}
-
+import {
+  getCurrentProgram,
+  type DisplayProgram,
+} from "@/data/program-schedule";
 
 export default function RadioTicker() {
+  const [currentProgram, setCurrentProgram] =
+    useState<DisplayProgram>(defaultProgram);
 
-  const currentProgram = getCurrentProgram();
+  useEffect(() => {
+    function updateProgram() {
+      setCurrentProgram(getCurrentProgram());
+    }
 
+    updateProgram();
+
+    const interval = window.setInterval(
+      updateProgram,
+      30_000,
+    );
+
+    return () => window.clearInterval(interval);
+  }, []);
 
   return (
-
-    <div className="bg-red-600 text-white overflow-hidden">
-
-
-      <div className="max-w-[1600px] mx-auto px-4 py-3">
-
-
+    <div className="overflow-hidden bg-red-600 text-white">
+      <div className="mx-auto max-w-[1600px] px-4 py-3">
         <div className="flex items-center gap-8 whitespace-nowrap">
-
-
-          <span className="font-bold flex items-center gap-2">
-
-            🔴 Rádio Relato
-
+          <span className="flex items-center gap-2 font-bold">
+            <span aria-hidden="true">●</span>
+            Rádio Relato
           </span>
 
-
           <div className="animate-marquee">
+            <span>NO AR AGORA:</span>
 
-            NO AR AGORA:
             <strong className="ml-2">
               {currentProgram.name}
             </strong>
 
-            <span className="mx-4">
-              •
-            </span>
+            <span className="mx-4">•</span>
 
-
-            Desporto com paixão e alma
-
+            <span>Desporto com paixão e alma!</span>
           </div>
-
-
         </div>
-
-
       </div>
-
-
     </div>
-
   );
 }

@@ -1,105 +1,132 @@
-﻿export default function InternacionalPage() {
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { news } from "@/data/news";
+
+const internationalNews = [
+  news.find((item) => item.slug === "psg-barcelona-noite-campeoes-champions-2026")!,
+  news.find((item) => item.slug === "el-clasico-barcelona-real-madrid-outubro-2026")!,
+  news.find((item) => item.slug === "nba-campeao-entra-a-perder-epoca-2026-27")!,
+];
+
+export default function InternacionalPage() {
   return (
     <main className="min-h-screen bg-gray-100">
-      <section className="bg-blue-900 text-white px-6 py-16">
-        <div className="max-w-7xl mx-auto">
-          <p className="text-blue-300 font-semibold uppercase tracking-wider mb-3">
-            Rádio Relato
-          </p>
+      {/* CAPA INTERNACIONAL */}
+      <section className="w-full bg-blue-950">
+        <div className="relative flex aspect-[16/5] min-h-[145px] w-full items-center justify-center overflow-hidden bg-blue-950 sm:min-h-[190px]">
+          <Image
+            src="/internacional/futebol-internacional.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            aria-hidden="true"
+            className="scale-110 object-cover opacity-25 blur-2xl"
+          />
 
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Futebol Internacional
+          <Image
+            src="/internacional/futebol-internacional.png"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            aria-hidden="true"
+            className="object-cover opacity-40"
+          />
+
+          <div className="absolute inset-0 bg-blue-950/40" />
+
+          <h1 className="relative z-10 px-4 text-center text-2xl font-black uppercase tracking-widest text-white drop-shadow-lg sm:text-5xl">
+            Desporto Internacional
           </h1>
-
-          <p className="text-lg text-blue-100 max-w-2xl">
-            Acompanhe as principais notícias, competições e protagonistas
-            do futebol internacional.
-          </p>
         </div>
       </section>
 
-      <section className="max-w-7xl mx-auto px-6 py-12">
-        <h2 className="text-2xl font-bold text-gray-900 mb-8">
-          Em destaque
-        </h2>
+      {/* INTRODUÇÃO */}
+      <section className="mx-auto max-w-7xl px-5 py-10 sm:px-6 sm:py-12">
+        <div className="mb-8">
+          <p className="text-sm font-bold uppercase tracking-wider text-red-600">
+            Rádio Relato
+          </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <h2 className="mt-2 text-2xl font-black text-blue-950 sm:text-3xl">
+            Desporto Internacional
+          </h2>
 
-          <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <div className="h-48 bg-blue-800 flex items-center justify-center">
-              <span className="text-7xl">🏆</span>
-            </div>
+          <p className="mt-3 max-w-3xl text-base leading-7 text-gray-600">
+            Acompanhe os principais acontecimentos do futebol internacional,
+            das competições europeias e do basquetebol mundial.
+          </p>
+        </div>
 
-            <div className="p-6">
-              <p className="text-sm text-blue-700 font-bold uppercase mb-2">
-                Grandes competições
-              </p>
+        {/* NOTÍCIAS INTERNACIONAIS */}
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {internationalNews.map((item) => (
+            <article
+              key={item.id}
+              className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-lg"
+            >
+              <Link
+                href={`/noticias/${item.slug}`}
+                className="block"
+                aria-label={`Ler notícia: ${item.title}`}
+              >
+                <div className="relative aspect-video overflow-hidden bg-gray-200">
+                  <Image
+                    src={
+                      item.slug === "psg-barcelona-noite-campeoes-champions-2026"
+                        ? "/noticias/psg-barcelona-2026.avif"
+                        : item.image
+                    }
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className={
+                      item.imageFit === "contain"
+                        ? "object-contain p-3"
+                        : "object-cover transition-transform duration-500 hover:scale-105"
+                    }
+                  />
+                </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Mundial
-              </h3>
+                <div className="p-5">
+                  <span className="text-xs font-bold uppercase tracking-wide text-red-600">
+                    {item.category}
+                  </span>
 
-              <p className="text-gray-600 mb-5">
-                Notícias, resultados e protagonistas das grandes competições
-                mundiais.
-              </p>
+                  <h3 className="mt-2 text-lg font-extrabold leading-snug text-blue-950">
+                    {item.title}
+                  </h3>
 
-              <button className="text-blue-700 font-bold hover:text-blue-900">
-                Ver notícias →
-              </button>
-            </div>
-          </article>
+                  {item.date && (
+                    <p className="mt-2 text-xs text-gray-500">
+                      {item.date}
+                    </p>
+                  )}
 
-          <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <div className="h-48 bg-green-700 flex items-center justify-center">
-              <span className="text-7xl">🌍</span>
-            </div>
+                  <p className="mt-3 text-sm leading-6 text-gray-600">
+                    {item.excerpt}
+                  </p>
 
-            <div className="p-6">
-              <p className="text-sm text-blue-700 font-bold uppercase mb-2">
-                África
-              </p>
+                  <span className="mt-4 inline-block text-sm font-bold text-blue-800">
+                    Ler notícia →
+                  </span>
+                </div>
+              </Link>
+            </article>
+          ))}
+        </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                CAN
-              </h3>
-
-              <p className="text-gray-600 mb-5">
-                Acompanhe a principal competição de selecções do futebol
-                africano.
-              </p>
-
-              <button className="text-blue-700 font-bold hover:text-blue-900">
-                Ver notícias →
-              </button>
-            </div>
-          </article>
-
-          <article className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow">
-            <div className="h-48 bg-red-700 flex items-center justify-center">
-              <span className="text-7xl">⚽</span>
-            </div>
-
-            <div className="p-6">
-              <p className="text-sm text-blue-700 font-bold uppercase mb-2">
-                Futebol mundial
-              </p>
-
-              <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                Futebol Europeu
-              </h3>
-
-              <p className="text-gray-600 mb-5">
-                Os principais clubes, campeonatos e estrelas do futebol
-                internacional.
-              </p>
-
-              <button className="text-blue-700 font-bold hover:text-blue-900">
-                Ver notícias →
-              </button>
-            </div>
-          </article>
-
+        {/* LIGAÇÃO PARA TODAS AS NOTÍCIAS */}
+        <div className="mt-9 text-center">
+          <Link
+            href="/noticias"
+            className="inline-flex rounded-full bg-red-600 px-5 py-3 text-sm font-bold text-white transition hover:bg-red-700"
+          >
+            Ver todas as notícias →
+          </Link>
         </div>
       </section>
     </main>
