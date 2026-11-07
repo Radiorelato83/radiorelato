@@ -1,97 +1,93 @@
-﻿"use client";
+﻿
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { news } from "@/data/news";
+import { EditorialArticle, formatArticleDate } from "@/lib/news";
 
-const petroDossierSlug = "casamento-vias-divorcio-catetao";
+function getSafeImageSrc(value: string | null): string {
+  const fallback = "/noticias/petro-dossier.jpg";
 
-const petroDossier = news.find(
-  (item) => item.slug === petroDossierSlug
-);
+  if (!value) return fallback;
 
-const otherFeaturedNews = news.filter(
-  (item) =>
-    item.featured === true &&
-    item.slug !== petroDossierSlug
-);
+  const image = value.trim();
 
-const featuredNews = petroDossier
-  ? [petroDossier, ...otherFeaturedNews]
-  : otherFeaturedNews;
+  if (image.startsWith("/") && !image.startsWith("//")) {
+    return image;
+  }
 
-export default function HeroMain() {
+  try {
+    const url = new URL(image);
+
+    if (url.protocol === "https:" || url.protocol === "http:") {
+      return image;
+    }
+  } catch {
+    return fallback;
+  }
+
+  return fallback;
+}
+
+export default function HeroMain({
+  articles,
+}: {
+  articles: EditorialArticle[];
+}) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    if (featuredNews.length <= 1) return;
+    if (articles.length <= 1) return;
 
     const timer = setInterval(() => {
       setCurrentIndex((current) =>
-        current >= featuredNews.length - 1 ? 0 : current + 1
+        current >= articles.length - 1 ? 0 : current + 1
       );
     }, 6000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [articles.length]);
 
-  if (featuredNews.length === 0) return null;
+  if (!articles.length) return null;
 
-  const safeIndex = currentIndex % featuredNews.length;
-  const currentNews = featuredNews[safeIndex];
+  const safeIndex = currentIndex % articles.length;
+  const currentNews = articles[safeIndex];
 
-  const previousSlide = () => {
+  const isRelaunch = currentNews.title
+    .toUpperCase()
+    .includes("ESTAMOS DE VOLTA");
+
+  const image = isRelaunch
+    ? "/images/jose-sebastiao.jpg"
+    : getSafeImageSrc(currentNews.image_url);
+
+  const previousSlide = () =>
     setCurrentIndex((current) =>
-      current === 0 ? featuredNews.length - 1 : current - 1
+      current === 0 ? articles.length - 1 : current - 1
     );
-  };
 
-  const nextSlide = () => {
+  const nextSlide = () =>
     setCurrentIndex((current) =>
-      current >= featuredNews.length - 1 ? 0 : current + 1
+      current >= articles.length - 1 ? 0 : current + 1
     );
-  };
 
   return (
     <section className="bg-[#f4f7fb] px-4 py-6 md:px-6 md:py-8">
       <div className="mx-auto w-full max-w-[1600px]">
         <article
           key={currentNews.id}
-          className="group relative min-h-[440px] overflow-hidden rounded-3xl bg-blue-950 shadow-xl md:min-h-[540px]"
+          className="group relative flex min-h-[440px] flex-col overflow-hidden rounded-3xl shadow-xl md:min-h-[540px] md:flex-row"
         >
-          <Image
-            src={currentNews.image}
-            alt=""
-            fill
-            priority
-            sizes="100vw"
-            className="scale-110 object-cover opacity-35 blur-xl"
-          />
-
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/80 to-blue-950/35" />
-
-          <div className="absolute inset-0">
-            <Image
-              src={currentNews.image}
-              alt={currentNews.title}
-              fill
-              priority
-              sizes="100vw"
-              className="object-contain object-right p-4 opacity-70 md:p-8"
-            />
-          </div>
-
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-950 via-blue-950/75 to-transparent" />
-
-          <div className="relative z-10 flex min-h-[440px] items-center px-6 py-10 md:min-h-[540px] md:px-12 md:py-14">
-            <div className="max-w-4xl">
+          <div className="order-2 flex w-full flex-col justify-center bg-blue-950 px-6 py-10 md:order-1 md:w-1/2 md:px-12 md:py-14">
+            <div className="max-w-2xl">
               <div className="flex flex-wrap items-center gap-3">
                 <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-black uppercase tracking-wider text-white">
-                  {currentNews.category}
+                  {currentNews.category?.name ?? "Notícias"}
                 </span>
+
                 <span className="text-sm font-medium text-blue-100">
-                  {currentNews.date}
+                  {formatArticleDate(currentNews.published_at)}
                 </span>
               </div>
 
@@ -99,16 +95,30 @@ export default function HeroMain() {
                 Rádio Relato · Destaque editorial
               </p>
 
-              <h1 className="mt-3 max-w-4xl text-3xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+              <h1 className="mt-3 text-3xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
                 {currentNews.title}
               </h1>
 
-              <p className="mt-5 max-w-3xl text-base leading-7 text-blue-50 md:text-lg md:leading-8">
-                {currentNews.excerpt}
-              </p>
+              {currentNews.excerpt && (
+                <p className="mt-5 text-base leading-7 text-blue-50 md:text-lg md:leading-8">
+                  {currentNews.excerpt}
+                </p>
+              )}
+
+              {isRelaunch && (
+                <div className="mt-6">
+                  <Image
+                    src="/images/logo-radio-relato.jpg"
+                    alt="Rádio Relato"
+                    width={230}
+                    height={163}
+                    className="h-auto w-36 rounded-lg object-contain md:w-48"
+                  />
+                </div>
+              )}
 
               <p className="mt-4 text-sm font-semibold text-blue-100">
-                Por {currentNews.author}
+                Redacção Rádio Relato
               </p>
 
               <div className="mt-7">
@@ -116,28 +126,44 @@ export default function HeroMain() {
                   href={`/noticias/${currentNews.slug}`}
                   className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-black text-blue-950 transition hover:bg-red-600 hover:text-white"
                 >
-                  Ler dossier / notícia
+                  Ler artigo
                   <span className="ml-3">→</span>
                 </Link>
               </div>
             </div>
           </div>
 
-          {featuredNews.length > 1 && (
-            <div className="absolute bottom-5 right-5 z-20 flex items-center gap-2 md:bottom-8 md:right-8">
+          <div className="relative order-1 min-h-[280px] w-full bg-[#e9edf2] md:order-2 md:min-h-[540px] md:w-1/2">
+            <Image
+              src={image}
+              alt={isRelaunch ? "José Sebastião" : currentNews.title}
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className={
+                isRelaunch
+                  ? "object-cover object-center"
+                  : "object-contain"
+              }
+            />
+          </div>
+
+          {articles.length > 1 && (
+            <div className="absolute bottom-4 right-4 z-20 flex items-center gap-2 md:bottom-6 md:right-6">
               <button
                 type="button"
                 onClick={previousSlide}
                 aria-label="Destaque anterior"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-blue-950/60 text-xl font-bold text-white backdrop-blur transition hover:bg-red-600"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/50 bg-blue-950 text-xl font-bold text-white transition hover:bg-red-600"
               >
                 ←
               </button>
+
               <button
                 type="button"
                 onClick={nextSlide}
                 aria-label="Próximo destaque"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/40 bg-blue-950/60 text-xl font-bold text-white backdrop-blur transition hover:bg-red-600"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/50 bg-blue-950 text-xl font-bold text-white transition hover:bg-red-600"
               >
                 →
               </button>

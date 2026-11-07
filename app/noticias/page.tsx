@@ -1,20 +1,19 @@
-﻿import BreakingNews from "@/components/BreakingNews";
+import BreakingNews from "@/components/BreakingNews";
 import NewsSection from "@/components/NewsSection";
 import Footer from "@/components/Footer";
+import { getPublishedArticles } from "@/lib/news";
 
-export default function Noticias() {
+export const dynamic = "force-dynamic";
+
+export default async function Noticias() {
+  const articles = await getPublishedArticles({ limit: 100 });
+
   return (
     <>
       <main>
-
-        {/* Última Hora */}
         <BreakingNews />
-
-        {/* Notícias */}
-        <NewsSection />
-
+        <NewsSection articles={articles} />
       </main>
-
       <Footer />
     </>
   );
