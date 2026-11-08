@@ -1,4 +1,6 @@
-﻿"use client";
+﻿
+
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -99,21 +101,11 @@ export default function NewsSection() {
                 >
                   <Image
                     src={currentNews.image}
-                    alt=""
-                    fill
-                    sizes="(max-width: 768px) 100vw, 42vw"
-                    className="scale-110 object-cover opacity-25 blur-md"
-                  />
-
-                  <Image
-                    src={currentNews.image}
                     alt={currentNews.title}
                     fill
                     sizes="(max-width: 768px) 100vw, 42vw"
-                    className="object-contain object-center p-4 transition-transform duration-700 group-hover:scale-[1.03]"
+                    className="object-contain object-center p-4"
                   />
-
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
                 </Link>
 
                 {/* Categoria */}
@@ -157,7 +149,6 @@ export default function NewsSection() {
               <div className="flex flex-col justify-center p-6 md:p-10">
                 <div className="mb-4 flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-[0.12em] text-gray-400">
                   <span>{currentNews.date}</span>
-
                   {readingTime && (
                     <>
                       <span className="text-red-500">•</span>
