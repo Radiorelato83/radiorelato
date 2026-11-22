@@ -1,5 +1,4 @@
-
-"use client";
+﻿"use client";
 
 import { useEffect, useState, type FormEvent } from "react";
 import Link from "next/link";
@@ -20,25 +19,6 @@ export default function DefinirPasswordPage() {
     const supabase = createClient();
     let activo = true;
 
-    async function verificarSessao() {
-      const { data, error } = await supabase.auth.getSession();
-
-      if (!activo) return;
-
-      if (error || !data.session) {
-        setErro(
-          "A ligação de recuperação é inválida ou expirou. Solicite um novo link."
-        );
-        setSessaoValida(false);
-      } else {
-        setSessaoValida(true);
-      }
-
-      setValidando(false);
-    }
-
-    void verificarSessao();
-
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange((event, session) => {
@@ -52,6 +32,66 @@ export default function DefinirPasswordPage() {
         setErro("");
       }
     });
+
+    async function verificarSessao() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const code = params.get("code");
+        const erroAutenticacao =
+          params.get("error_description") || params.get("error");
+
+        if (erroAutenticacao) {
+          throw new Error(erroAutenticacao);
+        }
+
+        if (code) {
+          const { error } = await supabase.auth.exchangeCodeForSession(code);
+
+          if (error) {
+            throw error;
+          }
+
+          window.history.replaceState(
+            {},
+            document.title,
+            window.location.pathname
+          );
+        }
+
+        const { data, error } = await supabase.auth.getSession();
+
+        if (error) {
+          throw error;
+        }
+
+        if (!activo) return;
+
+        if (!data.session) {
+          setErro(
+            "A ligação de recuperação é inválida ou expirou. Solicite um novo link."
+          );
+          setSessaoValida(false);
+        } else {
+          setSessaoValida(true);
+          setErro("");
+        }
+      } catch (error) {
+        if (!activo) return;
+
+        setSessaoValida(false);
+        setErro(
+          error instanceof Error
+            ? error.message
+            : "Não foi possível validar o link de recuperação."
+        );
+      } finally {
+        if (activo) {
+          setValidando(false);
+        }
+      }
+    }
+
+    void verificarSessao();
 
     return () => {
       activo = false;
@@ -78,16 +118,16 @@ export default function DefinirPasswordPage() {
 
     try {
       const supabase = createClient();
-      const { error } = await supabase.auth.updateUser({
-        password,
-      });
+      const { error } = await supabase.auth.updateUser({ password });
 
       if (error) {
         setErro(error.message);
         return;
       }
 
-      setMensagem("Palavra-passe alterada com sucesso. Pode entrar no painel.");
+      setMensagem(
+        "Palavra-passe alterada com sucesso. Pode entrar no painel."
+      );
       setPassword("");
       setConfirmacao("");
 
@@ -97,7 +137,9 @@ export default function DefinirPasswordPage() {
         router.replace("/admin/login");
       }, 1800);
     } catch {
-      setErro("Não foi possível alterar a palavra-passe. Solicite novo link.");
+      setErro(
+        "Não foi possível alterar a palavra-passe. Solicite um novo link."
+      );
     } finally {
       setLoading(false);
     }
@@ -106,7 +148,9 @@ export default function DefinirPasswordPage() {
   if (validando) {
     return (
       <main className="flex min-h-screen items-center justify-center bg-slate-100 px-4">
-        <p className="text-slate-700">A validar o link de recuperação...</p>
+        <p className="text-slate-700">
+          A validar o link de recuperação...
+        </p>
       </main>
     );
   }
@@ -142,7 +186,10 @@ export default function DefinirPasswordPage() {
               </div>
 
               <div>
-                <label htmlFor="confirmacao" className="block text-sm font-medium">
+                <label
+                  htmlFor="confirmacao"
+                  className="block text-sm font-medium"
+                >
                   Confirmar palavra-passe
                 </label>
                 <input
