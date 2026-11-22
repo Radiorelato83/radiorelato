@@ -14,7 +14,6 @@ type Banner = {
   competition: string | null;
   match_date: string | null;
   image_url: string;
-  stream_url: string | null;
   display_order: number;
 };
 
@@ -71,7 +70,7 @@ export default function EditTransmissionBannerForm({
       } = await supabase.auth.getUser();
 
       if (authError || !user) {
-        throw new Error("Sess├úo expirada. Volta a entrar no painel.");
+        throw new Error("Sessão expirada. Volta a entrar no painel.");
       }
 
       const { data: profile } = await supabase
@@ -81,7 +80,7 @@ export default function EditTransmissionBannerForm({
         .maybeSingle();
 
       if (profile?.role !== "admin") {
-        throw new Error("N├úo tens autoriza├º├úo para editar banners.");
+        throw new Error("Não tens autorização para editar banners.");
       }
 
       if (image instanceof File && image.size > 0) {
@@ -97,7 +96,7 @@ export default function EditTransmissionBannerForm({
         }
 
         if (image.size > 10 * 1024 * 1024) {
-          throw new Error("A imagem n├úo pode ultrapassar 10 MB.");
+          throw new Error("A imagem não pode ultrapassar 10 MB.");
         }
 
         const safeName = image.name
@@ -139,7 +138,7 @@ export default function EditTransmissionBannerForm({
       setMessage(
         error instanceof Error
           ? error.message
-          : "N├úo foi poss├¡vel actualizar o banner."
+          : "Não foi possível actualizar o banner."
       );
     } finally {
       setLoading(false);
@@ -156,7 +155,7 @@ export default function EditTransmissionBannerForm({
         }}
         className="rounded-lg border border-blue-800 px-5 py-2 font-semibold text-blue-900 hover:bg-blue-50"
       >
-        {editing ? "Fechar edi├º├úo" : "Editar banner"}
+        {editing ? "Fechar edição" : "Editar banner"}
       </button>
 
       {editing && (
@@ -165,7 +164,7 @@ export default function EditTransmissionBannerForm({
           className="mt-5 space-y-5 rounded-xl border border-blue-200 bg-blue-50 p-5"
         >
           <h4 className="text-lg font-bold text-blue-950">
-            Editar dados da transmiss├úo
+            Editar dados da transmissão
           </h4>
 
           <input type="hidden" name="id" value={banner.id} />
@@ -178,7 +177,7 @@ export default function EditTransmissionBannerForm({
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-700">
-              T├¡tulo do banner *
+              Título do banner *
             </label>
             <input
               name="title"
@@ -220,7 +219,7 @@ export default function EditTransmissionBannerForm({
           <div className="grid gap-5 sm:grid-cols-2">
             <div>
               <label className="mb-2 block text-sm font-semibold text-slate-700">
-                Competi├º├úo
+                Competição
               </label>
               <input
                 name="competition"
@@ -241,19 +240,6 @@ export default function EditTransmissionBannerForm({
                 className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3"
               />
             </div>
-          </div>
-
-          <div>
-            <label className="mb-2 block text-sm font-semibold text-slate-700">
-              Liga├º├úo da emiss├úo em directo
-            </label>
-            <input
-              type="url"
-              name="stream_url"
-              defaultValue={banner.stream_url || ""}
-              placeholder="https://..."
-              className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3"
-            />
           </div>
 
           <div>
@@ -285,14 +271,14 @@ export default function EditTransmissionBannerForm({
               }}
             />
             <p className="mt-2 text-xs text-slate-500">
-              Se n├úo seleccionares outra imagem, ser├í mantida a actual.
-              M├íximo: 10 MB.
+              Se não seleccionares outra imagem, será mantida a actual.
+              Máximo: 10 MB.
             </p>
           </div>
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-700">
-              Ordem de apresenta├º├úo
+              Ordem de apresentação
             </label>
             <input
               type="number"
@@ -318,7 +304,7 @@ export default function EditTransmissionBannerForm({
               disabled={loading}
               className="rounded-lg bg-blue-950 px-6 py-3 font-semibold text-white hover:bg-blue-900 disabled:opacity-60"
             >
-              {loading ? "A guardar..." : "Guardar altera├º├Áes"}
+              {loading ? "A guardar..." : "Guardar alterações"}
             </button>
 
             <button

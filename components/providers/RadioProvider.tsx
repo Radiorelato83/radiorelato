@@ -1,18 +1,31 @@
+
 "use client";
 
 import {
   createContext,
   useContext,
+  useEffect,
   useRef,
   useState,
   ReactNode,
 } from "react";
+import { createClient } from "@/lib/supabase/client";
 
 const STREAM_URL = "https://stream.zeno.fm/3na5wqsajqeuv";
+
+export type LiveTransmission = {
+  id: string;
+  title: string;
+  home_team: string;
+  away_team: string;
+  competition: string | null;
+  match_date: string | null;
+};
 
 type RadioContextType = {
   isPlaying: boolean;
   volume: number;
+  liveTransmission: LiveTransmission | null;
   toggle: () => void;
   setVolume: (value: number) => void;
 };
@@ -28,6 +41,56 @@ export function RadioProvider({
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolumeState] = useState(0.7);
+  const [liveTransmission, setLiveTransmission] =
+    useState<LiveTransmission | null>(null);
+
+  useEffect(() => {
+    const supabase = createClient();
+
+    async function syncTransmission() {
+      const { data, error } = await supabase
+        .from("transmission_banners")
+        .select(
+          "id, title, home_team, away_team, competition, match_date"
+        )
+        .eq("is_active", true)
+        .eq("is_live", true)
+        .order("display_order", { ascending: true })
+        .limit(1)
+        .maybeSingle();
+
+      if (error) {
+        console.error(
+          "Erro ao consultar emissão especial:",
+          error.message
+        );
+        return;
+      }
+
+      setLiveTransmission(data ?? null);
+    }
+
+    void syncTransmission();
+
+    const channel = supabase
+      .channel("radio-transmission-changes")
+      .on(
+        "postgres_changes",
+        {
+          event: "*",
+          schema: "public",
+          table: "transmission_banners",
+        },
+        () => {
+          void syncTransmission();
+        }
+      )
+      .subscribe();
+
+    return () => {
+      void supabase.removeChannel(channel);
+    };
+  }, []);
 
   function createAudio() {
     if (audioRef.current) {
@@ -58,41 +121,24 @@ export function RadioProvider({
     return audio;
   }
 
- async function toggle() {
-  const audio = createAudio();
+  async function toggle() {
+    const audio = createAudio();
 
-  if (!audio.paused) {
-    audio.pause();
-    return;
-  }
-
-  try {
-    await audio.play();
-  } catch (error) {
-    if (
-      error instanceof DOMException &&
-      error.name === "AbortError"
-    ) {
-      console.warn(
-        "Reprodução interrompida antes de iniciar."
-      );
+    if (!audio.paused) {
+      audio.pause();
       return;
     }
 
-    console.error(
-      "Erro ao iniciar Rádio Relato:",
-      error
-    );
-
-    setIsPlaying(false);
+    try {
+      await audio.play();
+    } catch (error) {
+      console.error("Erro ao iniciar Rádio Relato:", error);
+      setIsPlaying(false);
+    }
   }
-}
 
   function setVolume(value: number) {
-    const newVolume = Math.min(
-      1,
-      Math.max(0, value)
-    );
+    const newVolume = Math.min(1, Math.max(0, value));
 
     setVolumeState(newVolume);
 
@@ -106,6 +152,7 @@ export function RadioProvider({
       value={{
         isPlaying,
         volume,
+        liveTransmission,
         toggle,
         setVolume,
       }}

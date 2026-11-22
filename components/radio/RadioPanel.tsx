@@ -67,7 +67,13 @@ function getCurrentProgram(): CurrentProgram {
 }
 
 export default function RadioPanel() {
-  const { isPlaying, toggle, volume, setVolume } = useRadio();
+  const {
+    isPlaying,
+    toggle,
+    volume,
+    setVolume,
+    liveTransmission,
+  } = useRadio();
 
   const [currentProgram, setCurrentProgram] =
     useState<CurrentProgram>(() => getCurrentProgram());
@@ -75,6 +81,23 @@ export default function RadioPanel() {
   const [showProgramInfo, setShowProgramInfo] = useState(false);
   const [slidePosition, setSlidePosition] =
     useState<SlidePosition | null>(null);
+
+  const isSpecialTransmission = Boolean(liveTransmission);
+
+  const transmissionDescription = liveTransmission
+    ? [
+        liveTransmission.home_team,
+        "vs",
+        liveTransmission.away_team,
+        liveTransmission.competition,
+      ]
+        .filter(Boolean)
+        .join(" · ")
+    : currentProgram.description || currentProgram.name;
+
+  const displayedProgramName = isSpecialTransmission
+    ? "Trumunu Online"
+    : currentProgram.name;
 
   const updateSlidePosition = useCallback(() => {
     if (window.innerWidth < 768) {
@@ -92,15 +115,14 @@ export default function RadioPanel() {
     }
 
     const quemRect = quemSomosLink.getBoundingClientRect();
-const programsRect = programsLink.getBoundingClientRect();
-const contentRect = panelContent.getBoundingClientRect();
+    const programsRect = programsLink.getBoundingClientRect();
+    const contentRect = panelContent.getBoundingClientRect();
 
-// Limita o slide ao espaço entre "Quem Somos" e "Programas".
-const leftEdge = Math.min(quemRect.right, programsRect.right);
-const rightEdge = Math.max(quemRect.left, programsRect.left);
+    const leftEdge = Math.min(quemRect.right, programsRect.right);
+    const rightEdge = Math.max(quemRect.left, programsRect.left);
 
-const left = leftEdge - contentRect.left;
-const width = rightEdge - leftEdge;
+    const left = leftEdge - contentRect.left;
+    const width = rightEdge - leftEdge;
 
     if (width <= 0) {
       setSlidePosition(null);
@@ -193,10 +215,18 @@ const width = rightEdge - leftEdge;
 
               <span
                 className={`truncate text-sm font-semibold ${
-                  isPlaying ? "text-red-600" : "text-blue-700"
+                  isSpecialTransmission
+                    ? "text-green-600"
+                    : isPlaying
+                      ? "text-red-600"
+                      : "text-blue-700"
                 }`}
               >
-                {isPlaying ? "No Ar" : "Programação"}
+                {isSpecialTransmission
+                  ? "EMISSÃO ESPECIAL NO AR"
+                  : isPlaying
+                    ? "No Ar"
+                    : "Programação"}
               </span>
             </div>
 
@@ -213,7 +243,7 @@ const width = rightEdge - leftEdge;
               </span>
 
               <span className="truncate text-sm font-medium text-gray-900">
-                {currentProgram.name}
+                {displayedProgramName}
               </span>
             </div>
           </div>
@@ -253,10 +283,10 @@ const width = rightEdge - leftEdge;
             >
               <div className="marquee-container w-full overflow-hidden">
                 <div
-                  key={currentProgram.description || currentProgram.name}
+                  key={transmissionDescription}
                   className="marquee-text whitespace-nowrap text-xs font-bold text-blue-600 md:text-sm"
                 >
-                  {currentProgram.description || currentProgram.name}
+                  {transmissionDescription}
                 </div>
               </div>
             </div>
@@ -266,10 +296,10 @@ const width = rightEdge - leftEdge;
         <div className="border-t border-gray-100 py-2 md:hidden">
           <div className="marquee-container w-full overflow-hidden">
             <div
-              key={currentProgram.description || currentProgram.name}
+              key={transmissionDescription}
               className="marquee-text whitespace-nowrap text-xs font-bold text-blue-600"
             >
-              {currentProgram.description || currentProgram.name}
+              {transmissionDescription}
             </div>
           </div>
         </div>

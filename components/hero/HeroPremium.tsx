@@ -2,7 +2,7 @@ import HeroMain from "./HeroMain";
 import { getPublishedArticles } from "@/lib/news";
 
 export default async function HeroPremium() {
-  const featured = await getPublishedArticles({ featured: true, limit: 5 });
+  const featured = await getPublishedArticles({ featured: true, limit: 3 });
 
   return (
     <section className="w-full">

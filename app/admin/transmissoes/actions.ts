@@ -14,7 +14,7 @@ async function verifyAdmin() {
 
   if (!user) {
     redirect("/admin/login");
-    throw new Error("Utilizador n├úo autenticado.");
+    throw new Error("Utilizador não autenticado.");
   }
 
   const userId = user.id;
@@ -42,7 +42,7 @@ function parseSectionConfig(formData: FormData) {
   const rawConfig = String(formData.get("config") || "");
 
   if (!rawConfig) {
-    throw new Error("A configura├º├úo da sec├º├úo est├í vazia.");
+    throw new Error("A configuração da secção está vazia.");
   }
 
   let config: unknown;
@@ -50,7 +50,7 @@ function parseSectionConfig(formData: FormData) {
   try {
     config = JSON.parse(rawConfig);
   } catch {
-    throw new Error("A configura├º├úo enviada n├úo ├® v├ílida.");
+    throw new Error("A configuração enviada não é válida.");
   }
 
   if (
@@ -58,7 +58,7 @@ function parseSectionConfig(formData: FormData) {
     typeof config !== "object" ||
     Array.isArray(config)
   ) {
-    throw new Error("O formato da configura├º├úo ├® inv├ílido.");
+    throw new Error("O formato da configuração é inválido.");
   }
 
   return config;
@@ -84,7 +84,7 @@ export async function saveTransmissionSectionDraft(
 
   if (error) {
     throw new Error(
-      `N├úo foi poss├¡vel guardar o rascunho: ${error.message}`
+      `Não foi possível guardar o rascunho: ${error.message}`
     );
   }
 
@@ -111,7 +111,7 @@ export async function publishTransmissionSection(
 
   if (error) {
     throw new Error(
-      `N├úo foi poss├¡vel publicar a sec├º├úo: ${error.message}`
+      `Não foi possível publicar a secção: ${error.message}`
     );
   }
 
@@ -125,7 +125,7 @@ export async function toggleTransmissionBanner(
   const enabled = formData.get("enabled") === "true";
 
   if (!id) {
-    throw new Error("Identificador do banner inv├ílido.");
+    throw new Error("Identificador do banner inválido.");
   }
 
   const { supabase } = await verifyAdmin();
@@ -139,13 +139,13 @@ export async function toggleTransmissionBanner(
 
     if (checkError) {
       throw new Error(
-        `N├úo foi poss├¡vel verificar a emiss├úo: ${checkError.message}`
+        `Não foi possível verificar a emissão: ${checkError.message}`
       );
     }
 
     if (banner?.is_live) {
       throw new Error(
-        "Termine a emiss├úo em directo antes de desactivar este banner."
+        "Termine a emissão em directo antes de desactivar este banner."
       );
     }
   }
@@ -160,7 +160,7 @@ export async function toggleTransmissionBanner(
 
   if (error) {
     throw new Error(
-      `N├úo foi poss├¡vel actualizar o estado do banner: ${error.message}`
+      `Não foi possível actualizar o estado do banner: ${error.message}`
     );
   }
 
@@ -177,16 +177,15 @@ export async function updateTransmissionBanner(
   const competition = String(formData.get("competition") || "").trim();
   const matchDate = String(formData.get("match_date") || "").trim();
   const imageUrl = String(formData.get("image_url") || "").trim();
-  const streamUrl = String(formData.get("stream_url") || "").trim();
   const displayOrder = Number(formData.get("display_order") || 0);
 
   if (!id || !title || !homeTeam || !awayTeam || !imageUrl) {
-    throw new Error("Preenche todos os campos obrigat├│rios.");
+    throw new Error("Preenche todos os campos obrigatórios.");
   }
 
   if (!Number.isInteger(displayOrder) || displayOrder < 0) {
     throw new Error(
-      "A ordem de apresenta├º├úo deve ser um n├║mero igual ou superior a zero."
+      "A ordem de apresentação deve ser um número igual ou superior a zero."
     );
   }
 
@@ -196,16 +195,8 @@ export async function updateTransmissionBanner(
     if (!["http:", "https:"].includes(parsedImageUrl.protocol)) {
       throw new Error();
     }
-
-    if (streamUrl) {
-      const parsedStreamUrl = new URL(streamUrl);
-
-      if (!["http:", "https:"].includes(parsedStreamUrl.protocol)) {
-        throw new Error();
-      }
-    }
   } catch {
-    throw new Error("Verifica o endere├ºo da imagem ou da transmiss├úo.");
+    throw new Error("Verifica o endereço da imagem.");
   }
 
   let matchDateISO: string | null = null;
@@ -214,7 +205,7 @@ export async function updateTransmissionBanner(
     const parsedDate = new Date(`${matchDate}:00+01:00`);
 
     if (Number.isNaN(parsedDate.getTime())) {
-      throw new Error("A data e hora do jogo s├úo inv├ílidas.");
+      throw new Error("A data e hora do jogo são inválidas.");
     }
 
     matchDateISO = parsedDate.toISOString();
@@ -231,7 +222,6 @@ export async function updateTransmissionBanner(
       competition: competition || null,
       match_date: matchDateISO,
       image_url: imageUrl,
-      stream_url: streamUrl || null,
       display_order: displayOrder,
       updated_at: new Date().toISOString(),
     })
@@ -239,7 +229,7 @@ export async function updateTransmissionBanner(
 
   if (error) {
     throw new Error(
-      `N├úo foi poss├¡vel guardar as altera├º├Áes: ${error.message}`
+      `Não foi possível guardar as alterações: ${error.message}`
     );
   }
 
@@ -253,7 +243,7 @@ export async function toggleLiveTransmission(
   const live = formData.get("live") === "true";
 
   if (!id) {
-    throw new Error("Identificador da transmiss├úo inv├ílido.");
+    throw new Error("Identificador da transmissão inválido.");
   }
 
   const { supabase } = await verifyAdmin();
@@ -267,13 +257,13 @@ export async function toggleLiveTransmission(
 
     if (checkError) {
       throw new Error(
-        `N├úo foi poss├¡vel verificar o banner: ${checkError.message}`
+        `Não foi possível verificar o banner: ${checkError.message}`
       );
     }
 
     if (!banner?.is_active) {
       throw new Error(
-        "Active o banner antes de iniciar a emiss├úo especial."
+        "Ative o banner antes de iniciar a emissão especial."
       );
     }
   }
@@ -289,15 +279,14 @@ export async function toggleLiveTransmission(
   if (error) {
     if (error.code === "23505") {
       throw new Error(
-        "J├í existe outra transmiss├úo em directo. Termine-a antes de iniciar esta."
+        "Já existe outra transmissão em directo. Termine-a antes de iniciar esta."
       );
     }
 
     throw new Error(
-      `N├úo foi poss├¡vel actualizar o estado da emiss├úo: ${error.message}`
+      `Não foi possível actualizar o estado da emissão: ${error.message}`
     );
   }
 
   refreshTransmissionPages();
 }
-

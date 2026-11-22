@@ -1,4 +1,5 @@
 ﻿
+
 "use client";
 
 import Image from "next/image";
@@ -73,79 +74,76 @@ export default function HeroMain({
     );
 
   return (
-    <section className="bg-[#f4f7fb] px-4 py-6 md:px-6 md:py-8">
+    <section className="w-full bg-[#f4f7fb] px-4 py-6 md:px-6 md:py-8">
       <div className="mx-auto w-full max-w-[1600px]">
         <article
           key={currentNews.id}
-          className="group relative flex min-h-[440px] flex-col overflow-hidden rounded-3xl shadow-xl md:min-h-[540px] md:flex-row"
+          className="group relative min-h-[560px] overflow-hidden rounded-3xl bg-blue-950 shadow-xl md:min-h-[540px]"
         >
-          <div className="order-2 flex w-full flex-col justify-center bg-blue-950 px-6 py-10 md:order-1 md:w-1/2 md:px-12 md:py-14">
-            <div className="max-w-2xl">
-              <div className="flex flex-wrap items-center gap-3">
-                <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-black uppercase tracking-wider text-white">
-                  {currentNews.category?.name ?? "Notícias"}
-                </span>
+          <Image
+            src={image}
+            alt={isRelaunch ? "José Sebastião" : currentNews.title}
+            fill
+            priority
+            sizes="100vw"
+            className={
+              isRelaunch
+                ? "object-cover object-center"
+                : "object-cover object-center"
+            }
+          />
 
-                <span className="text-sm font-medium text-blue-100">
-                  {formatArticleDate(currentNews.published_at)}
-                </span>
-              </div>
+         <div className="absolute inset-0 bg-gradient-to-t from-blue-950/55 via-blue-950/15 to-transparent" />
+          <div className="relative z-10 flex min-h-[560px] max-w-4xl flex-col justify-end px-6 pb-24 pt-24 md:min-h-[540px] md:justify-center md:px-12 md:py-16 lg:px-16">
+            <div className="flex flex-wrap items-center gap-3">
+              <span className="rounded-full bg-red-600 px-4 py-2 text-xs font-black uppercase tracking-wider text-white">
+                {currentNews.category?.name ?? "Notícias"}
+              </span>
 
-              <p className="mt-6 text-xs font-black uppercase tracking-[0.2em] text-red-400">
-                Rádio Relato · Destaque editorial
-              </p>
-
-              <h1 className="mt-3 text-3xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
-                {currentNews.title}
-              </h1>
-
-              {currentNews.excerpt && (
-                <p className="mt-5 text-base leading-7 text-blue-50 md:text-lg md:leading-8">
-                  {currentNews.excerpt}
-                </p>
-              )}
-
-              {isRelaunch && (
-                <div className="mt-6">
-                  <Image
-                    src="/images/logo-radio-relato.jpg"
-                    alt="Rádio Relato"
-                    width={230}
-                    height={163}
-                    className="h-auto w-36 rounded-lg object-contain md:w-48"
-                  />
-                </div>
-              )}
-
-              <p className="mt-4 text-sm font-semibold text-blue-100">
-                Redacção Rádio Relato
-              </p>
-
-              <div className="mt-7">
-                <Link
-                  href={`/noticias/${currentNews.slug}`}
-                  className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-black text-blue-950 transition hover:bg-red-600 hover:text-white"
-                >
-                  Ler artigo
-                  <span className="ml-3">→</span>
-                </Link>
-              </div>
+              <span className="text-sm font-medium text-white">
+                {formatArticleDate(currentNews.published_at)}
+              </span>
             </div>
-          </div>
 
-          <div className="relative order-1 min-h-[280px] w-full bg-[#e9edf2] md:order-2 md:min-h-[540px] md:w-1/2">
-            <Image
-              src={image}
-              alt={isRelaunch ? "José Sebastião" : currentNews.title}
-              fill
-              priority
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className={
-                isRelaunch
-                  ? "object-cover object-center"
-                  : "object-contain"
-              }
-            />
+            <p className="mt-6 text-xs font-black uppercase tracking-[0.2em] text-red-400">
+              Rádio Relato · Destaque editorial
+            </p>
+
+            <h1 className="mt-3 text-3xl font-black leading-tight tracking-tight text-white md:text-5xl lg:text-6xl">
+              {currentNews.title}
+            </h1>
+
+            {currentNews.excerpt && (
+              <p className="mt-5 max-w-3xl text-base leading-7 text-white md:text-lg md:leading-8">
+                {currentNews.excerpt}
+              </p>
+            )}
+
+            {isRelaunch && (
+              <div className="mt-6">
+                <Image
+                  src="/images/logo-radio-relato.jpg"
+                  alt="Rádio Relato"
+                  width={230}
+                  height={163}
+                  className="h-auto w-36 rounded-lg object-contain md:w-48"
+                />
+              </div>
+            )}
+
+            <p className="mt-4 text-sm font-semibold text-white">
+              Redacção Rádio Relato
+            </p>
+
+            <div className="mt-7">
+              <Link
+                href={`/noticias/${currentNews.slug}`}
+                className="inline-flex items-center rounded-full bg-white px-6 py-3 text-sm font-black text-blue-950 transition hover:bg-red-600 hover:text-white"
+              >
+                Ler artigo
+                <span className="ml-3">→</span>
+              </Link>
+            </div>
           </div>
 
           {articles.length > 1 && (

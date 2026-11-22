@@ -39,7 +39,7 @@ export default async function TransmissionBannersPage() {
 
   if (!user) {
     redirect("/admin/login");
-    throw new Error("Utilizador n├úo autenticado.");
+    throw new Error("Utilizador não autenticado.");
   }
 
   const userId = user.id;
@@ -63,7 +63,7 @@ export default async function TransmissionBannersPage() {
     supabase
       .from("transmission_banners")
       .select(
-        "id, title, home_team, away_team, competition, match_date, image_url, stream_url, is_active, is_live, display_order, created_at"
+        "id, title, home_team, away_team, competition, match_date, image_url, is_active, is_live, display_order, created_at"
       )
       .order("display_order", { ascending: true })
       .order("created_at", { ascending: false }),
@@ -90,11 +90,11 @@ export default async function TransmissionBannersPage() {
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div>
           <h1 className="text-2xl font-bold text-slate-900">
-            Gest├úo de Transmiss├Áes
+            Gestão de Transmissões
           </h1>
 
           <p className="mt-1 text-sm text-slate-600">
-            Administre os banners dos jogos e a apresenta├º├úo da sec├º├úo
+            Administre os banners dos jogos e a apresentação da secção
             Trumunu Online.
           </p>
         </div>
@@ -110,12 +110,12 @@ export default async function TransmissionBannersPage() {
       <section className="space-y-5 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
         <div>
           <h2 className="text-xl font-bold text-slate-900">
-            Editor da sec├º├úo Trumunu Online
+            Editor da secção Trumunu Online
           </h2>
 
           <p className="mt-1 text-sm text-slate-600">
-            Personalize os t├¡tulos, textos, fontes, tamanhos, cores e
-            alinhamento da sec├º├úo apresentada na p├ígina inicial.
+            Personalize os títulos, textos, fontes, tamanhos, cores e
+            alinhamento da secção apresentada na página inicial.
           </p>
         </div>
 
@@ -125,11 +125,11 @@ export default async function TransmissionBannersPage() {
       <section className="space-y-5 rounded-xl border border-slate-200 bg-white p-5 shadow-sm">
         <div>
           <h2 className="text-xl font-bold text-slate-900">
-            Adicionar transmiss├úo
+            Adicionar transmissão
           </h2>
 
           <p className="mt-1 text-sm text-slate-600">
-            Registe um novo jogo ou transmiss├úo para aparecer na p├ígina inicial.
+            Registe um novo jogo ou transmissão para aparecer na página inicial.
           </p>
         </div>
 
@@ -139,12 +139,12 @@ export default async function TransmissionBannersPage() {
       <section className="space-y-5">
         <div>
           <h2 className="text-xl font-bold text-slate-900">
-            Banners de transmiss├úo
+            Banners de transmissão
           </h2>
 
           <p className="mt-1 text-sm text-slate-600">
-            Edite, active ou desactive os banners e controle o in├¡cio e o fim
-            das emiss├Áes especiais.
+            Edite, active ou desactive os banners e controle o início e o fim
+            das emissões especiais.
           </p>
         </div>
 
@@ -156,7 +156,7 @@ export default async function TransmissionBannersPage() {
 
         {!bannersError && (!banners || banners.length === 0) && (
           <div className="rounded-lg border border-slate-200 bg-white p-6 text-center text-sm text-slate-500">
-            Ainda n├úo existem banners de transmiss├úo registados.
+            Ainda não existem banners de transmissão registados.
           </div>
         )}
 
@@ -195,7 +195,7 @@ export default async function TransmissionBannersPage() {
                         : "bg-slate-100 text-slate-600"
                     }`}
                   >
-                    {banner.is_live ? "Em directo" : "N├úo est├í em directo"}
+                    {banner.is_live ? "Em directo" : "Não está em directo"}
                   </span>
                 </div>
               </div>
@@ -212,37 +212,21 @@ export default async function TransmissionBannersPage() {
 
               <div className="grid gap-2 text-sm text-slate-600 sm:grid-cols-2">
                 <p>
-                  <strong>Competi├º├úo:</strong>{" "}
-                  {banner.competition || "N├úo definida"}
+                  <strong>Competição:</strong>{" "}
+                  {banner.competition || "Não definida"}
                 </p>
 
                 <p>
                   <strong>Data:</strong>{" "}
                   {banner.match_date
                     ? new Date(banner.match_date).toLocaleString("pt-AO")
-                    : "N├úo definida"}
+                    : "Não definida"}
                 </p>
 
                 <p>
                   <strong>Ordem:</strong> {banner.display_order}
                 </p>
-
-                <p>
-                  <strong>Transmiss├úo:</strong>{" "}
-                  {banner.stream_url ? "Link configurado" : "Sem link"}
-                </p>
               </div>
-
-              {banner.stream_url && (
-                <a
-                  href={banner.stream_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block text-sm font-medium text-blue-700 hover:underline"
-                >
-                  Abrir link da transmiss├úo
-                </a>
-              )}
 
               <div className="flex flex-wrap items-center gap-3 border-t border-slate-100 pt-4">
                 <form action={toggleTransmissionBanner}>
@@ -294,8 +278,8 @@ export default async function TransmissionBannersPage() {
                     }`}
                   >
                     {banner.is_live
-                      ? "Terminar emiss├úo"
-                      : "Iniciar emiss├úo especial"}
+                      ? "Terminar emissão"
+                      : "Iniciar emissão especial"}
                   </button>
                 </form>
               </div>
@@ -314,4 +298,3 @@ export default async function TransmissionBannersPage() {
     </main>
   );
 }
-

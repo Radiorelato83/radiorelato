@@ -26,10 +26,10 @@ type Config = {
 };
 
 const defaults: Config = {
-  eyebrow: "R├ídio Relato",
+  eyebrow: "Rádio Relato",
   title: "Trumunu Online",
   subtitle: "Especial Jornada",
-  description: "Acompanhe os grandes jogos na emiss├úo da R├ídio Relato.",
+  description: "Acompanhe os grandes jogos na emissão da Rádio Relato.",
   fontFamily: "Arial",
   titleSize: 32,
   subtitleSize: 14,
@@ -87,7 +87,7 @@ export default function TransmissionSectionEditor({
         setMessage("Rascunho guardado com sucesso.");
       } else {
         await publishTransmissionSection(formData);
-        setMessage("Configura├º├úo publicada com sucesso.");
+        setMessage("Configuração publicada com sucesso.");
       }
 
       setMessageType("success");
@@ -95,7 +95,7 @@ export default function TransmissionSectionEditor({
       setMessage(
         error instanceof Error
           ? error.message
-          : "Ocorreu um erro ao guardar a configura├º├úo."
+          : "Ocorreu um erro ao guardar a configuração."
       );
       setMessageType("error");
     } finally {
@@ -115,14 +115,14 @@ export default function TransmissionSectionEditor({
     <section className="mt-8 rounded-xl border border-blue-100 bg-white p-5 shadow-sm md:p-6">
       <div className="mb-6">
         <p className="text-sm font-bold uppercase tracking-wider text-red-600">
-          Personaliza├º├úo da p├ígina inicial
+          Personalização da página inicial
         </p>
         <h2 className="mt-1 text-2xl font-bold text-blue-950">
-          Editor visual ÔÇö Trumunu Online
+          Editor visual do Trumunu Online
         </h2>
         <p className="mt-2 text-sm text-slate-600">
-          Altera os textos e a apresenta├º├úo da sec├º├úo. As altera├º├Áes s├│ ficam
-          vis├¡veis ao p├║blico depois de publicadas.
+          Altera os textos e a apresentação da seção. As alterações ficam
+          visíveis ao público depois de publicadas.
         </p>
       </div>
 
@@ -142,7 +142,7 @@ export default function TransmissionSectionEditor({
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-700">
-              T├¡tulo principal
+              Título principal
             </label>
             <input
               value={config.title}
@@ -154,7 +154,7 @@ export default function TransmissionSectionEditor({
 
           <div>
             <label className="mb-2 block text-sm font-semibold text-slate-700">
-              Subt├¡tulo
+              Subtítulo
             </label>
             <input
               value={config.subtitle}
@@ -174,10 +174,10 @@ export default function TransmissionSectionEditor({
               rows={4}
               maxLength={1000}
               className="w-full rounded-lg border border-slate-300 px-4 py-3"
-              placeholder="Escreve o texto da sec├º├úo. Podes utilizar v├írias linhas."
+              placeholder="Escreve o texto da secção. Podes utilizar v├írias linhas."
             />
             <p className="mt-1 text-xs text-slate-500">
-              As mudan├ºas de linha ser├úo preservadas na apresenta├º├úo.
+              As mudanças de linha serão preservadas na apresentação.
             </p>
           </div>
 
@@ -201,7 +201,7 @@ export default function TransmissionSectionEditor({
           <div className="grid gap-4 sm:grid-cols-3">
             <div>
               <label className="mb-2 block text-sm font-semibold text-slate-700">
-                T├¡tulo: {config.titleSize}px
+                Título: {config.titleSize}px
               </label>
               <input
                 type="range"
@@ -217,7 +217,7 @@ export default function TransmissionSectionEditor({
 
             <div>
               <label className="mb-2 block text-sm font-semibold text-slate-700">
-                Subt├¡tulo: {config.subtitleSize}px
+                Subtítulo: {config.subtitleSize}px
               </label>
               <input
                 type="range"
@@ -262,9 +262,9 @@ export default function TransmissionSectionEditor({
               }
               className="w-full rounded-lg border border-slate-300 bg-white px-4 py-3"
             >
-              <option value="left">├Ç esquerda</option>
+              <option value="left">a esquerda</option>
               <option value="center">Ao centro</option>
-              <option value="right">├Ç direita</option>
+              <option value="right">a direita</option>
             </select>
           </div>
 
@@ -281,7 +281,7 @@ export default function TransmissionSectionEditor({
 
             <div>
               <label className="mb-2 block text-sm font-semibold text-slate-700">
-                Transpar├¬ncia: {config.overlayOpacity}%
+                Transparência: {config.overlayOpacity}%
               </label>
               <input
                 type="range"
@@ -300,7 +300,7 @@ export default function TransmissionSectionEditor({
           <div className="grid grid-cols-2 gap-4">
             {(
               [
-                ["titleColor", "Cor do t├¡tulo"],
+                ["titleColor", "Cor do título"],
                 ["textColor", "Cor do texto"],
                 ["accentColor", "Cor de destaque"],
                 ["backgroundColor", "Cor de fundo"],
@@ -325,7 +325,7 @@ export default function TransmissionSectionEditor({
         <div>
           <div className="sticky top-5">
             <h3 className="mb-3 text-lg font-bold text-slate-900">
-              Pr├®-visualiza├º├úo
+              Previsualização da secção
             </h3>
 
             <div
@@ -354,7 +354,7 @@ export default function TransmissionSectionEditor({
                   lineHeight: 1.15,
                 }}
               >
-                {config.title || "T├¡tulo da sec├º├úo"}
+                {config.title || "Título da secção"}
               </h3>
 
               <p
@@ -375,13 +375,14 @@ export default function TransmissionSectionEditor({
                   lineHeight: 1.6,
                 }}
               >
-                {config.description || "Texto descritivo da sec├º├úo."}
+                {config.description || "Texto descritivo da secção."}
               </p>
             </div>
 
             <p className="mt-3 text-xs text-slate-500">
-              A pr├®-visualiza├º├úo representa o cabe├ºalho da sec├º├úo. Os cart├Áes
-              dos jogos mant├¬m o desenho actual.
+              A previsualização representa o cabeçalho da secção. Os cartões
+
+              dos jogos mantêm o desenho actual.
             </p>
           </div>
         </div>
@@ -416,7 +417,7 @@ export default function TransmissionSectionEditor({
           onClick={() => submit("publish")}
           className="rounded-lg bg-red-600 px-5 py-3 font-semibold text-white hover:bg-red-700 disabled:opacity-60"
         >
-          {loading ? "A processar..." : "Publicar altera├º├Áes"}
+          {loading ? "A processar..." : "Publicar alterações"}
         </button>
       </div>
     </section>

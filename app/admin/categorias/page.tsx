@@ -54,7 +54,7 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
     .order("name", { ascending: true });
 
   if (error) {
-    throw new Error(`N├úo foi poss├¡vel carregar as categorias: ${error.message}`);
+    throw new Error(`Não foi possível carregar as categorias: ${error.message}`);
   }
 
   const categorias = (data ?? []) as unknown as Categoria[];
@@ -75,15 +75,15 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
             href="/admin"
             className="text-sm font-medium text-blue-800 underline"
           >
-            ÔåÉ Painel editorial
+            Voltar ao Painel editorial
           </Link>
 
           <h1 className="mt-4 text-3xl font-bold text-slate-900">
-            Gest├úo de categorias
+            Gestão de categorias
           </h1>
 
           <p className="mt-2 text-slate-600">
-            Crie, edite, ordene e acompanhe as categorias das not├¡cias.
+            Crie, edite, ordene e acompanhe as categorias das notícias.
           </p>
         </header>
 
@@ -121,14 +121,14 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                 htmlFor="description"
                 className="mb-2 block text-sm font-medium"
               >
-                Descri├º├úo
+                Descrição
               </label>
               <textarea
                 id="description"
                 name="description"
                 rows={2}
                 maxLength={500}
-                placeholder="Descri├º├úo opcional da categoria"
+                placeholder="Descrição opcional da categoria"
                 className="w-full rounded-lg border border-slate-300 px-3 py-3"
               />
             </div>
@@ -175,7 +175,7 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                           Slug: {categoria.slug}
                         </p>
                         <p className="mt-2 text-sm text-slate-600">
-                          {categoria.description || "Sem descri├º├úo."}
+                          {categoria.description || "Sem descrição."}
                         </p>
                         <p className="mt-2 text-sm font-medium text-blue-800">
                           {totalArtigos} artigo(s) associado(s)
@@ -208,7 +208,7 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                           name="slug"
                           required
                           defaultValue={categoria.slug}
-                          aria-label="Endere├ºo da categoria"
+                          aria-label="Endereço da categoria"
                           className="w-full rounded-lg border border-slate-300 px-3 py-2"
                         />
 
@@ -217,7 +217,7 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                           rows={2}
                           maxLength={500}
                           defaultValue={categoria.description ?? ""}
-                          aria-label="Descri├º├úo da categoria"
+                          aria-label="Descrição da categoria"
                           className="w-full rounded-lg border border-slate-300 px-3 py-2"
                         />
 
@@ -225,7 +225,7 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                           type="submit"
                           className="rounded-lg border border-blue-700 px-4 py-2 text-sm font-semibold text-blue-800 hover:bg-blue-50"
                         >
-                          Guardar altera├º├Áes
+                          Guardar alterações
                         </button>
                       </form>
 
@@ -244,7 +244,7 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                             htmlFor={`ordem-${categoria.id}`}
                             className="block font-semibold text-slate-800"
                           >
-                            Ordem de apresenta├º├úo
+                            Ordem de apresentação
                           </label>
 
                           <div className="flex gap-2">
@@ -284,13 +284,13 @@ export default async function AdminCategoriasPage({ searchParams }: Props) {
                             className="rounded-lg border border-red-300 px-4 py-2 text-sm font-semibold text-red-700 hover:bg-red-50 disabled:cursor-not-allowed disabled:opacity-40"
                           >
                             {totalArtigos > 0
-                              ? "N├úo pode eliminar: tem artigos"
+                              ? "Não pode eliminar: tem artigos"
                               : "Eliminar categoria"}
                           </button>
 
                           {totalArtigos === 0 && (
                             <p className="mt-2 text-xs text-slate-500">
-                              Esta categoria n├úo tem artigos associados.
+                              Esta categoria não tem artigos associados.
                             </p>
                           )}
                         </form>
